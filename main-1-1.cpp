@@ -1,9 +1,9 @@
 #include <iostream>
 #include "function-1-1.cpp"
 
-extern void Hello();
+extern void hello();
 
 int main(){
-    Hello();
+    hello();
     return 0;
 }
