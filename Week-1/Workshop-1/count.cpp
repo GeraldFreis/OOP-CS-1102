@@ -18,4 +18,4 @@ int count(int array[], int n){
         return 0;
     }
 }
-
+//he
