@@ -1,6 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
-#include "count.cpp"
+// #include "count.cpp"
 using namespace std;
 
 extern int count(int[], int);
