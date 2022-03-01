@@ -12,7 +12,7 @@ bool ascending(int array[], int n){
             if(array[i] >= previous_num){
                 previous_num = array[i];
             }
-            else if(i == (n-1)){
+            else if(i == (n)){
                 return true;
             }
             else{
