@@ -8,6 +8,6 @@ extern int count(int[], int);
 int main(){
     int arg[5] = {4, 5, 6, 7, 8};
     // count(arg, 5);
-    cout << "The total number of evens is: " << count(arg, 5) << endl;
+    cout << "The number is: " << count(arg, 5) << endl;
     return 0;
 }
