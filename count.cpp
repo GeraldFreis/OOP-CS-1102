@@ -14,8 +14,8 @@ int count(int array[], int n){
     // cout << "The number of even numbers is: " << count << endl;
     return evens_count;
     }
+
     else{
         return 0;
     }
 }
-//he
