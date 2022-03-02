@@ -5,7 +5,7 @@ using namespace std;
 extern int median(int[], int);
 
 int main(){
-    int arr[5] = {0, 1, 2, 3, 4};
+    int arr[5] = {1, 3, 5, 2, 5};
     cout << "The median is: " << median(arr, 5) << endl;
     return 0;
 }
