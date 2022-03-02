@@ -5,6 +5,7 @@ using namespace std;
 extern double weighted_average(int[], int);
 
 int main(){
-    int arr[6] = {0, 0, 0, 1, 1, 1};
-    
+    int arr[6] = {1, 2, 1, 4, 1, 3};
+    weighted_average(arr, 6);
+    return 0;
 }
