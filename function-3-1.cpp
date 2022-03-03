@@ -18,9 +18,9 @@ bool fanarray(int array[], int n){
             }
 
             else if(array[i] != (array[n-i])){
-                return 1;
+                return true;
             }
         }
-        return true;
+        return false;
     }
 }
