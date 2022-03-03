@@ -1,7 +1,7 @@
 #include <iostream>
 
 int minimum(int array[], int n){
-    int smallest_num;
+    int smallest_num = 0;
     if(n < 1){
         return 0;
     }

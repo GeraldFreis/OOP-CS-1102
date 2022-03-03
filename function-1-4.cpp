@@ -1,7 +1,7 @@
 #include <iostream>
 
 int sumtwo(int array1[], int array2[], int n){
-    int sum_of_both;
+    int sum_of_both = 0;
     if(n < 1){
         return 0;
     }

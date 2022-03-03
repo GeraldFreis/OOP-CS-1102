@@ -1,7 +1,7 @@
 #include <iostream>
 
 int max(int array[], int n){
-    int max;
+    int max = 0;
     if(n < 1){
         return 0;
     }

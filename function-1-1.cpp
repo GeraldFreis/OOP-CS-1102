@@ -3,8 +3,8 @@
 #include <stdio.h>
 using namespace std;
 
-int sum(int *array[], int n){
-    int sum_counter;
+int sum(int array[], int n){
+    int sum_counter = 0;
 
     if (n <= 0){
         return 0;
@@ -13,7 +13,7 @@ int sum(int *array[], int n){
     else{
         
         for(int i=0; i < n; i++){
-            sum_counter += *array[i];
+            sum_counter += array[i];
         }
 
         return sum_counter;
