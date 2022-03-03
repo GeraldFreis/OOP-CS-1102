@@ -11,8 +11,9 @@ int main(int argc, char **argv){
         arr[i] = *(argv[i]);
     }
 
-    int test_array[5] = {0, 1, 3, 2, 4};
+    // int test_array[5] = {0, 1, 3, 2, 4};
     
-    median(test_array, 5);
+    // median(test_array, 5);
+    median(arr, argc);
     return 0;
 }
