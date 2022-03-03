@@ -10,6 +10,8 @@ int main(int argc, char **argv){
     for(int i =0; i < argc; i++){
         arr[i] = *(argv[i]);
     }
+
+
     median(arr, argc);
     return 0;
 }

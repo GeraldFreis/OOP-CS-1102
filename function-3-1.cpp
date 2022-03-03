@@ -3,7 +3,7 @@ using namespace std;
 // function to check whether the array is a fan array
 bool fanarray(int array[], int n){
     float sub_arr_size = n /2;
-    if(n < 1){
+    if(n <= 0 ){
         return false;
     }    
     // if the first element is equal to the last element --> pass
@@ -21,7 +21,7 @@ bool fanarray(int array[], int n){
                 return false;
             }
         }
-        
+
         return true;
     }
 }
