@@ -2,7 +2,7 @@
 #include "function-3-1.cpp"
 using namespace std;
 
-extern bool fan_array(int[], int);
+extern bool fanarray(int[], int);
 
 int main(int argc, char **argv){
     // int arr[6] = {0, 1, 2, 2, 1, 0};
@@ -12,6 +12,6 @@ int main(int argc, char **argv){
     // else if(fan_array(arr, 6) == true){
     //     cout << "The array is a fan array" << endl;
     // }
-    fan_array(argv, argc);
+    fanarray(argv, argc);
     return 0;
 }

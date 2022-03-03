@@ -1,9 +1,9 @@
 #include <iostream>
 #include "function-1-5.cpp"
 
-extern int evens(int);
+extern int count_even(int);
 
 int main(int number){
-    evens(number);
+    count_even(number);
     return 0;
 }

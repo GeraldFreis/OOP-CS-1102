@@ -3,7 +3,7 @@
 #include <cmath>
 using namespace std;
 
-double weighted_average(int array[], int n){
+double weightedaverage(int array[], int n){
     int weighted_average_counter = 0;
 
     if(n < 1){

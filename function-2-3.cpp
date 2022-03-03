@@ -3,7 +3,7 @@
 #include <stdlib.h>
 using namespace std;
 
-void two_five_nine(int array[], int n){
+void twofivenine(int array[], int n){
     int two_counter = 0; // number which stores the amount of times that 2 occurs in the array
     int five_counter = 0; // number storing amount of times that five occurs in the array
     int nine_counter = 0; // number storing the amount of times that nine occurs in the array

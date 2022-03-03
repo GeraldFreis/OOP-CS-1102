@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 // function to check whether the array is a fan array
-bool fan_array(int array[], int n){
+bool fanarray(int array[], int n){
     int sub_arr_size = n/2;
     int array_length = n;
     if(n <= 0){

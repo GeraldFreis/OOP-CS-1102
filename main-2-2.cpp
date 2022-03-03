@@ -1,9 +1,9 @@
 #include <iostream>
-#include "function-2-2.cpp";
+#include "function-2-2.cpp"
 
-extern int max(int[], int);
+extern int maximum(int[], int);
 
 int main(int argc, char **argv){
-    max(argv, argc);
+    maximum(argv, argc);
     return 0;
 }
