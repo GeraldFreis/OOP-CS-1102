@@ -29,6 +29,6 @@ void twofivenine(int array[], int n){
                 
             }
         }
-        printf("2:%d;5:%d;9:%d;", two_counter, five_counter, nine_counter);
+        printf("2:%d;5:%d;9:%d; \n", two_counter, five_counter, nine_counter);
     }
 }
