@@ -10,8 +10,8 @@ int minimum(int array[], int n){
     
     else{
         for(int i=0; i< n; i++){
-  
-            if(array[i] <= smallest_num){
+
+            if(array[i] <= smallest_num || i==0){
                 smallest_num = array[i];
             }
 
