@@ -9,9 +9,9 @@ int main(int argc, char **argv)
     int arr[argc];
 
     for(int i =0; i < argc; i++){
-        arr[i] = int(argv[i]);
+        arr[i] = *(argv[i]);
     }
-    
+
     sum_array(arr, argc);
     return 0 ;
 }
