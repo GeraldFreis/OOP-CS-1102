@@ -1,5 +1,5 @@
 #include <iostream>
-// #include "function-3-2.cpp"
+#include "function-3-2.cpp"
 using namespace std;
 
 extern int median(int[], int);
@@ -11,7 +11,8 @@ int main(int argc, char **argv){
         arr[i] = *(argv[i]);
     }
 
-
-    median(arr, argc);
+    int test_array[5] = {0, 1, 3, 2, 4};
+    
+    median(test_array, 5);
     return 0;
 }
