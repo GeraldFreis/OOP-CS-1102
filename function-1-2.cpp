@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 double average(int array[], int n){
-    int sum = 0;
+    float sum = 0;
     float average = 0;
 
     if (n <= 0){
