@@ -1,5 +1,5 @@
 #include <iostream>
-#include "function-1-1.cpp"
+// #include "function-1-1.cpp"
 using namespace std;
 
 extern int sum_array(int[], int);
