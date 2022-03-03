@@ -1,5 +1,5 @@
 #include <iostream>
-#include "function-3-2.cpp"
+// #include "function-3-2.cpp"
 using namespace std;
 
 extern int median(int[], int);
