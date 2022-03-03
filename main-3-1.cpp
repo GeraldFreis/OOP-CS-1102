@@ -5,13 +5,12 @@ using namespace std;
 extern bool fanarray(int[], int);
 
 int main(int argc, char **argv){
-    // int arr[6] = {0, 1, 2, 2, 1, 0};
-    // if(fan_array(arr, 6) == false){
-    //     cout << "The array is not a fan array" << endl;
+    int arr[argc];
+
+    for(int i =0; i < argc; i++){
+        arr[i] = *(argv[i]);
+    }
     // }
-    // else if(fan_array(arr, 6) == true){
-    //     cout << "The array is a fan array" << endl;
-    // }
-    fanarray(argv, argc);
+    fanarray(arr, argc);
     return 0;
 }

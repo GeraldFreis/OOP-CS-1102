@@ -5,7 +5,12 @@ using namespace std;
 extern double weightedaverage(int[], int);
 
 int main(int argc, char **argv){
-    // int arr[6] = {1, 2, 1, 4, 1, 3};
-    weightedaverage(argv, argc);
+    int arr[argc];
+
+    for(int i =0; i < argc; i++){
+        arr[i] = *(argv[i]);
+    }
+
+    weightedaverage(arr, argc);
     return 0;
 }

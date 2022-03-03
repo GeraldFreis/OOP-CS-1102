@@ -4,6 +4,12 @@
 extern int count(int[], int, int);
 
 int main(int argc, char **argv, int num){
-    count(argv, argc, num);
+    int arr[argc];
+
+    for(int i =0; i < argc; i++){
+        arr[i] = *(argv[i]);
+    }
+    
+    count(arr, argc, num);
     return 0;
 }
