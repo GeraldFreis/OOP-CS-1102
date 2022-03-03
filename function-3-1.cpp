@@ -1,11 +1,21 @@
 #include <iostream>
+#include <cmath>
+
 using namespace std;
 
 // function to check whether the array is a fan array
 bool fanarray(int array[], int n){
 
-    float sub_arr_size = n /2;
+    float sub_arr_size =0;
+    if(n % 2== 0){
+        sub_arr_size = n /2;
+    }
+    else if(n % 2 != 0 ){
+        sub_arr_size = round((n + 1) /2);
+    }
+
     int previous_num = 0;
+    // cout << sub_arr_size << endl;
 
     if(n <= 0){
         return false;
@@ -29,6 +39,7 @@ bool fanarray(int array[], int n){
             if(array[i] != int(array[n-1-i])){
                 return false;
             }
+            // cout << previous_num << endl;
             
         }
 
