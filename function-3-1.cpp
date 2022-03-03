@@ -4,7 +4,7 @@ using namespace std;
 bool fanarray(int array[], int n){
     int sub_arr_size = n/2;
     int array_length = n;
-    if(n <= 0){
+    if(n < 1){
         return false;
     }    
     // if the first element is equal to the last element --> pass
