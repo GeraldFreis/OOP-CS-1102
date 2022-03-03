@@ -10,6 +10,7 @@ void two_five_nine(int array[], int n){
 
     if(n < 1){
         cout << "the number of elements is less than 1" << endl;
+        // return 0;
     }
     else{
         for(int i=0; i< n; i++){

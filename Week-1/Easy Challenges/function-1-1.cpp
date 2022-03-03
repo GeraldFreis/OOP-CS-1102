@@ -3,7 +3,7 @@
 #include <stdio.h>
 using namespace std;
 
-int sum(char *array[], int n){
+int sum(int *array[], int n){
     int sum_counter;
 
     if (n <= 0){

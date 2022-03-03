@@ -1,7 +1,13 @@
 #include <iostream>
-#include "function-2-2.cpp"
+// #include <charconv>
+// #include <string_view>
+#include "function-1-2.cpp"
+using namespace std;
 
-int main(int argc, char **argv){
+extern double average(int[], int);
+
+int main(int argc, char **argv)
+{
     average(argv, argc);
     return 0;
 }

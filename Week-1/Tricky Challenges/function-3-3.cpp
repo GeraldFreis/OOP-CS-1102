@@ -23,6 +23,7 @@ double weighted_average(int array[], int n){
         }
         weighted_average_counter = weighted_average_counter;
         // weighted_average_counter = (weighted_average_counter);
-        printf("The weighted average: %d", weighted_average_counter);
+        // printf("The weighted average: %d", weighted_average_counter);
+        return weighted_average_counter;
     }
 }

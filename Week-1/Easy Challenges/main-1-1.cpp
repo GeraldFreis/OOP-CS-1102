@@ -2,7 +2,7 @@
 #include "function-1-1.cpp"
 using namespace std;
 
-extern int sum(int*, int);
+extern int sum(int[], int);
 
 int main(int argc, char **argv)
 {

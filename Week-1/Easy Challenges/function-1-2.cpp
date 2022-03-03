@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 
-int average(char *array[], int n){
+double average(int array[], int n){
     int sum;
     int average;
 
@@ -11,9 +11,9 @@ int average(char *array[], int n){
     
     else{
         for(int i=0; i<n; i++){
-            sum += *array[i];
+            sum += array[i];
         }
-        average = sum / sizeof(array);
+        average = sum / n;
         return average;
     }
 }

@@ -1,5 +1,7 @@
 #include <iostream>
-#include "function-5-5.cpp"
+#include "function-1-5.cpp"
+
+extern int evens(int);
 
 int main(int number){
     evens(number);
