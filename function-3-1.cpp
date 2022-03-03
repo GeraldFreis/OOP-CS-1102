@@ -19,13 +19,13 @@ bool fanarray(int array[], int n){
             if(i == 0){
                 previous_num = array[i];
             }
-            else if(array[i] > previous_num){
+            else if(array[i] >= previous_num){
                 previous_num = array[i];
             }
             else{
                 return false;
             }
-            
+
             if(array[i] != int(array[n-1-i])){
                 return false;
             }
