@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <list>
+#include <stdio.h>
 using namespace std;
 
 #include <stdio.h>
