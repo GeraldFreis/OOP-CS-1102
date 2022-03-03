@@ -5,6 +5,7 @@ using namespace std;
 bool fanarray(int array[], int n){
 
     float sub_arr_size = n /2;
+    int previous_num = 0;
 
     if(n <= 0){
         return false;
@@ -15,14 +16,20 @@ bool fanarray(int array[], int n){
     // if all numbers were passed -- > return true
     else{
         for(int i=0; i < sub_arr_size; i++){
-
-            // if(array[i] == array[n-i]){
-            //     continue;
-            // }
-
+            if(i == 0){
+                previous_num = array[i];
+            }
+            else if(array[i] > previous_num){
+                previous_num = array[i];
+            }
+            else{
+                return false;
+            }
+            
             if(array[i] != int(array[n-1-i])){
                 return false;
             }
+            
         }
 
         return true;
