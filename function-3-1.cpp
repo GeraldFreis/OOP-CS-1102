@@ -21,6 +21,7 @@ bool fanarray(int array[], int n){
                 return false;
             }
         }
+        
         return true;
     }
 }
