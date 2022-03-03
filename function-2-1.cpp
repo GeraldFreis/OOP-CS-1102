@@ -4,7 +4,7 @@ int minimum(int array[], int n){
 
     int smallest_num = 0;
 
-    if(n < 1){
+    if(n <= 0){
         return 0;
     }
     
