@@ -13,6 +13,6 @@ int main(int argc, char **argv){
     // }
     // int arr_1[5] = {1, 2, 3, 2, 1};
     
-    fanarray(arr_1, 5);
+    fanarray(arr, argc);
     return 0;
 }
