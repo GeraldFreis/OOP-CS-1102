@@ -1,5 +1,5 @@
 #include <iostream>
-#include "function-3-4.cpp"
+// #include "function-3-4.cpp"
 using namespace std;
 
 extern void passorfail(char);

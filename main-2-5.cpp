@@ -1,5 +1,5 @@
 #include <iostream>
-#include "function-2-5.cpp"
+// #include "function-2-5.cpp"
 using namespace std;
 
 extern bool descending(int[], int);

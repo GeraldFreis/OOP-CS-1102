@@ -1,5 +1,5 @@
 #include <iostream>
-#include "function-2-1.cpp"
+// #include "function-2-1.cpp"
 
 extern int minimum(int[], int);
 

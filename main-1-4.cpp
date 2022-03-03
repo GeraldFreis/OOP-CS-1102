@@ -1,5 +1,5 @@
 #include <iostream>
-#include "function-1-4.cpp"
+// #include "function-1-4.cpp"
 
 extern int sumtwo(int[], int[], int);
 

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "function-3-5.cpp"
+// #include "function-3-5.cpp"
 using namespace std;
 
 extern double sumeven(double[], int);

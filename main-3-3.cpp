@@ -1,5 +1,5 @@
 #include <iostream>
-#include "function-3-3.cpp"
+// #include "function-3-3.cpp"
 using namespace std;
 
 extern double weightedaverage(int[], int);
