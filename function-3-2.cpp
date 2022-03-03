@@ -1,6 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
-#include <list>
+
 #include <stdio.h>
 #include <algorithm>
 
