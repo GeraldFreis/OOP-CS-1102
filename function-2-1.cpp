@@ -1,10 +1,13 @@
 #include <iostream>
 
 int minimum(int array[], int n){
+
     int smallest_num = 0;
+
     if(n < 1){
         return 0;
     }
+    
     else{
         for(int i=0; i< n; i++){
             if(i==0){

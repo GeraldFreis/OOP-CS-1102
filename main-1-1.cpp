@@ -5,8 +5,13 @@ using namespace std;
 extern int sum_array(int[], int);
 
 int main(int argc, char **argv)
-{
-    int arr[argc] = int(argv);
+{   
+    int arr[argc];
+
+    for(int i =0; i < argc; i++){
+        arr[i] = int(argv[i]);
+    }
+    
     sum_array(arr, argc);
     return 0 ;
 }
