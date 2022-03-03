@@ -29,27 +29,27 @@ using namespace std;
 //     // }
 // }
 
-int sorting_array(int *array[], int n){
+// int sorting_array(int *array[], int n){
 
-    for(int i=0; i < n; i++){
-        for(int i=0; i< n; i++){
-            int tempval = 0;
+//     for(int i=0; i < n; i++){
+//         for(int i=0; i< n; i++){
+//             int tempval = 0;
 
-            if(array[i] < array[i-1]){
-                tempval = int(array[i-1]);
-                array[i-1] = array[i];
-                array[i] = array[i-1];
-            }
+//             if(array[i] < array[i-1]){
+//                 tempval = int(array[i-1]);
+//                 array[i-1] = array[i];
+//                 array[i] = array[i-1];
+//             }
 
 
-            else if(array[i] >= array[i-1]){
-                array[i] = array[i];
-            }
+//             else if(array[i] >= array[i-1]){
+//                 array[i] = array[i];
+//             }
          
-        }
-    }
-    // return array;
-}
+//         }
+//     }
+//     // return array;
+// }
 
 int median(int array[], int n){
     int middle_of_array = n / 2;
