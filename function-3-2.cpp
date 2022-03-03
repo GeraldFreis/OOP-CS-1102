@@ -3,6 +3,8 @@
 #include <list>
 using namespace std;
 
+#include <stdio.h>
+
 int median(int array[], int n){
     int middle_of_array = n / 2;
     int median = 0;
