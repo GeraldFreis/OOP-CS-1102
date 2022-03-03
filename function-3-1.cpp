@@ -2,8 +2,7 @@
 using namespace std;
 // function to check whether the array is a fan array
 bool fanarray(int array[], int n){
-    int sub_arr_size = n/2;
-    int array_length = n;
+    float sub_arr_size = n /2;
     if(n < 1){
         return false;
     }    
@@ -13,14 +12,11 @@ bool fanarray(int array[], int n){
     // if all numbers were passed -- > return true
     else{
         for(int i=0; i < sub_arr_size; i++){
-            // int number_to_match = array[n-i];
-            int number_to_match = array[6 - i];
-            // cout << array[i] << ": " << number_to_match<< endl;
+
             if(array[i] == array[n-i]){
                 continue;
             }
-            else if(array[i] != (array[n])){
-                cout << "Falsed " << array[n-i] << endl;
+            else if(array[i] != (array[n-i])){
                 return false;
             }
         }
