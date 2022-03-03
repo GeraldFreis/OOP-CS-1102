@@ -5,22 +5,22 @@ using namespace std;
 void passorfail(char grade){
     switch(grade){
         case 'A':
-            cout << "Person passed" << endl;
+            cout << "Pass" << endl;
             break;
         case 'B':
-            cout << "Person passed" << endl;
+            cout << "Pass" << endl;
             break;
         case 'C':
-            cout << "Person passed" << endl;
+            cout << "Pass" << endl;
             break;
         case 'D':
-            cout << "Person failed" << endl;
+            cout << "Fail" << endl;
             break;
         case 'E':
-            cout << "Person failed" << endl;
+            cout << "Fail" << endl;
             break;
         case 'F':
-            cout << "Person failed" << endl;
+            cout << "Fail" << endl;
             break;
         default :
             cout << "Not a grade" << endl;
