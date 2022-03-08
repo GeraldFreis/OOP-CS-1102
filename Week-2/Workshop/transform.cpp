@@ -57,7 +57,7 @@ void binary(int number){
 }
 
 int main(){
-    int base_10_num = 26812;
+    int base_10_num = 19;
     binary(base_10_num);
     return 0;
 }
