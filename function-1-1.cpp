@@ -7,7 +7,7 @@ int diagonal(int array[4][4]){
     for(int row = 0; row < 4; row++){
         for(int column = 0; column < 4; column++){
             if(row==column){
-                cout << array[row][column] << endl;
+                // cout << array[row][column] << endl;
                 diagonal_sum += array[row][column];
             }
         }
