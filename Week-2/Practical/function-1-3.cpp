@@ -37,7 +37,10 @@ void count_numbers(int array[4][4]){
                     nine_counter += 1;
                 }
             }
+            else{
+                continue;
+            }
         }
     }
-    printf("0:%d;1:%d;2:%d;3:%d;4:%d;5:%d;6:%d;7:%d;8:%d;9:%d;", zero_counter, one_counter, two_counter, three_counter, four_counter, five_counter, six_counter, seven_counter, eight_counter, nine_counter);
+    printf("0:%d;1:%d;2:%d;3:%d;4:%d;5:%d;6:%d;7:%d;8:%d;9:%d;\n", zero_counter, one_counter, two_counter, three_counter, four_counter, five_counter, six_counter, seven_counter, eight_counter, nine_counter);
 }

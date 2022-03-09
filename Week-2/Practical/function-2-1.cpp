@@ -12,6 +12,7 @@ void print_as_binary(string decimal_number){
     int number = stoi(decimal_number);
     // cout << number << endl;
     string binarynumber;
+    binarynumber += '1';
 
     for(int i =0; i < 10000000; i++){
         if(number >= 2){
@@ -36,6 +37,7 @@ void print_as_binary(string decimal_number){
             }
         }
     }
+    
 
     // reversing the string
     for(int i = binarynumber.size() - 1; i > 0; i--){
