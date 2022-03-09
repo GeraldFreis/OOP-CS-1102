@@ -35,14 +35,15 @@ void print_as_binary(string decimal_number){
         }
     }
     binarynum += '1';
-    int n;
+    
+    int n = binarynum.size()-1;
 
-    if(binarynum.size() > 1){
-        int n = binarynum.size() - 1;
-    }
-    else{
-        int n = binarynum.size();
-    }
+    // if(binarynum.size() > 1){
+    //     int n = binarynum.size() - 1;
+    // }
+    // else{
+    //     int n = binarynum.size();
+    // }
     for(int i = 0; i < n; i++){
         cout << binarynum[n-i];
     }
