@@ -5,25 +5,6 @@
 
 using namespace std;
 
-// int returning_items_cost(char items[], int size, int* costptr){
-//     int cost_sum = 0;
-//     for(int i = 0; i < size; i++){
-//         if(items[i]=='milk'){
-//             cost_sum += 1;
-//         }
-//         else if(items[i] =='bread'){
-//             cost_sum += 2;
-//         }
-//         else if(items[i] == 'eggs'){
-//             cost_sum += 3;
-//         }
-//         else if(items[i] == 'beer'){
-//             cost_sum += 4;
-//         }
-//     }
-//     *costptr = cost_sum;
-// }
-
 void returning_items_cost(char items[], int size, int* costptr){
     int cost_sum = 0;
     for(int i = 0; i < size; i++){
@@ -62,12 +43,8 @@ void items(char items[], int *numberptr, int *costptr){
 void  basket(int *numberptr, int *costptr){
     // item array[0] = milk, array[1] = bread, array[2] = eggs, array[3] = beer
     char item_array[4] = {2, 3, 2, 2};
-    // int item_cost = items(item_array)[0];
-    // int number = items(item_array)[1];
-    // auto returnable_val = make_tuple(item_cost, number);
-    // return 
+
     items(item_array, numberptr, costptr);
-    // cout << *ptr << endl;
 }
 
 void customer(){
