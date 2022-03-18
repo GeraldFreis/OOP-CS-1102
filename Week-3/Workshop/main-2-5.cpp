@@ -10,5 +10,4 @@ int main(){
             cout << *(ptr+i+j) << endl;
         }
     }
-
 }
