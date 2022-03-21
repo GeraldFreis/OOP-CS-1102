@@ -6,12 +6,12 @@
 using namespace std;
 
 
-float multiply_op(float left, float right){
-    return left * right;
+float multiply_op(float *left, float *right){
+    return *left * *right;
 }
 
-float arithmetic_ops(float left, float right, float (*op)(float,float))
+float arithmetic_ops(float *left, float *right, float (*op)(float,float))
 {
     cout << multiply_op(left, right) << endl;
-    return (*op)(left, right);
+    return 0;
 }

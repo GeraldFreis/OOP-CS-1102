@@ -5,6 +5,4 @@ int size_of_variable_star_t(){
     
     cout << sizeof(t) << endl;
     delete t;
-    return 0;
-
 }

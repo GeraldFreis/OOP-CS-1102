@@ -1,5 +1,5 @@
 #include <iostream>
-#include "function-1-5.cpp"
+// #include "function-1-5.cpp"
 using namespace std;
 
 extern int size_of_array_arr();

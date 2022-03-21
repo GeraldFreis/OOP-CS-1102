@@ -3,19 +3,19 @@
 #include <string>
 using namespace std;
 
-float arithmetic_ops(float, float, string);
+extern float arithmetic_ops(float *, float *, float *);
 
 int main(){
-    float left;
-    float right;
-    string op;
+    float *left = new float;
+    float *right = new float;
+    float *op = new float;
 
     cout << "please enter your name: " << endl;
-    cin >> op;
+    cin >> *op;
     cout << "Enter a float" << endl;
-    cin >> left;
+    cin >> *left;
     cout << "Enter another:" << endl;
-    cin >> right;
+    cin >> *right;
     arithmetic_ops(left, right, op);
     return 0;
     // delete left, right, op;
