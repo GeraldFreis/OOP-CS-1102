@@ -1,5 +1,0 @@
-# all: function-1
-
-function-1: function-1-1.cpp
-	g++ function-1-1.cpp -o function-1
-	./function-1
