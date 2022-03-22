@@ -8,4 +8,5 @@ void copy_2d_strings(std::string first[][2], std::string second[][2], int n){
             second[i][j] = first[i][j];
         }
     }
-}
+    cout << first[1][1] << endl;
+}  
