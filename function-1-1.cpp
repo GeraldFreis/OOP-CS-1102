@@ -3,10 +3,19 @@
 using namespace std;
 
 void copy_2d_strings(std::string first[][2], std::string second[][2], int n){
-    for(int i = 0; i < n; i ++){
-        for(int j = 0; i < 2; i++){
+    int counter = 0;
+    int i = 0;
+    while(i!=n){
+        for(int j = 0; j < 2; j++){
             second[i][j] = first[i][j];
         }
+        counter += 1;
+        i++;
     }
-    cout << first[1][1] << endl;
+    // for(int i = 0; i < n; i++){
+    //     for(int j = 0; j < 2; j++){
+    //         cout << second[i][j] << " ";
+    //     }
+    //     cout << endl;
+    // }
 }  
