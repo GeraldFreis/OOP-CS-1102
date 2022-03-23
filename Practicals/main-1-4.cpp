@@ -1,5 +1,5 @@
 #include <iostream>
-#include "function-1-4.cpp"
+// #include "function-1-4.cpp"
 using namespace std;
 
 extern void cpyda(double *, double *, int);

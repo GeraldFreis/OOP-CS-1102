@@ -1,5 +1,5 @@
 #include <iostream>
-#include "function-2-1.cpp"
+// #include "function-2-1.cpp"
 using namespace std;
 
 extern void print_sevens(int *, int);
