@@ -1,0 +1,11 @@
+program_2_2: main_2_2.o function_2_2.o
+	g++ main_2_2.o function_2_2.o -o program_2_2
+
+main_2_2.o: main-2-2.cpp
+	g++ -c main-2-2.cpp
+
+function_2_2.o: function-2-2.cpp
+	g++ -c function-2-2.cpp
+
+clean:
+	rm *.o output
