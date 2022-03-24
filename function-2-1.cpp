@@ -8,7 +8,7 @@ void print_sevens(int *nums, int length){
             cout << *ptr << endl;
         }
     }
-    if(length < 1){
-        cout << 0 << endl;
-    }
+    // if(length < 1){
+    //     cout << 0 << endl;
+    // }
 }
