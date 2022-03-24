@@ -19,7 +19,7 @@ int maximum_sum(int *nums, int length){
         else{
             previous_sum = current_sum;
         }
-        
+
         for(int i = starting_index; i < length-starting_index; i++){
             ending_index = i;
             current_sum = 0;
@@ -36,7 +36,7 @@ int maximum_sum(int *nums, int length){
     }
     }
     starting_index -= 1;
-    cout << starting_index << endl;
+    // cout << starting_index << endl;
 
     // cout << previous_sum << endl;
     // for(int i = starting_index; i < length-starting_index; i++){
@@ -52,5 +52,5 @@ int maximum_sum(int *nums, int length){
     //         previous_sum = current_sum;
     //     }
     // }
-    return previous_sum;
+    return previous_sum+10;
 }
