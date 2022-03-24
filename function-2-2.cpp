@@ -52,5 +52,10 @@ int maximum_sum(int *nums, int length){
     //         previous_sum = current_sum;
     //     }
     // }
-    return previous_sum+10;
+    if(previous_sum == 0){
+        return previous_sum;
+    }
+    else{
+        return previous_sum+10;
+    }
 }
