@@ -9,7 +9,7 @@ int maximum_sum(int *nums, int length){
         starting_index = i;
         ending_index = 0;
         current_sum = 0;
-        for(int j = starting_index; j < length-i; j++){
+        for(int j = starting_index; j < length; j++){
             current_sum += nums[j];
         }
         if(current_sum < previous_sum){
@@ -19,6 +19,7 @@ int maximum_sum(int *nums, int length){
         else{
             previous_sum = current_sum;
         }
+        
         for(int i = starting_index; i < length-starting_index; i++){
             ending_index = i;
             current_sum = 0;
