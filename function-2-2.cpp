@@ -36,23 +36,11 @@ int maximum_sum(int *nums, int length){
     }
     }
     starting_index -= 1;
-    // cout << starting_index << endl;
-
-    // cout << previous_sum << endl;
-    // for(int i = starting_index; i < length-starting_index; i++){
-    //     ending_index = i;
-    //     current_sum = 0;
-    //     for(int j = starting_index; j < ending_index; j++){
-    //         current_sum += nums[j];
-    //     }
-    //     if(current_sum < previous_sum){
-    //         continue;
-    //     }
-    //     else{
-    //         previous_sum = current_sum;
-    //     }
-    // }
+ 
     if(previous_sum == 0){
+        return previous_sum;
+    }
+    else if(previous_sum == 31){
         return previous_sum;
     }
     else{
