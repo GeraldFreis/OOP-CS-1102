@@ -2,19 +2,21 @@
 using namespace std;
 
 int secondSmallestSum(int *numbers,int length){
-    int smallestsum = 0;
-    int secondsmallestsum = 0;
+    int smallestsum = numbers[0];
+    int secondsmallestsum = numbers[1];
     for(int i = 0; i < length; i++){
         int newsum = 0;
+        int counter  = length;
+
         for(int j = 0; j < length; j++){
-            int counter  = length - i;
             for(int k = 0; k < counter; k++){
                 newsum += numbers[k];
             }
+        counter --;
         if(newsum < smallestsum){
             smallestsum = newsum;
         }
-        else if(newsum > smallestsum && newsum < secondsmallestsum){
+        if(newsum > smallestsum && newsum < secondsmallestsum){
             secondsmallestsum = newsum;
         }
         }
