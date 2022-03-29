@@ -8,13 +8,12 @@ int *readNumbers(){
     for(int i = 0; i < 9; i++){
         
         cin >> arr[i];
-        cout << endl;
     }
     return arr;
 }
 
 void printNumbers(int *numbers,int length){
     for(int i = 0; i < length; i++){
-        cout << i << numbers[i] << endl;
+        cout << i << " " << numbers[i] << endl;
     }
 }

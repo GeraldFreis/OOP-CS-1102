@@ -8,7 +8,6 @@ int *readNumbers(){
     for(int i = 0; i < 9; i++){
         
         cin >> arr[i];
-        cout << endl;
     }
     return arr;
 }
