@@ -20,34 +20,34 @@ void printNumbers(int *numbers,int length){
 
 void hexDigits(int *numbers,int length){
     char *new_array = new char[10];
-    for(int i = 0; i < length; i++){
+    for(int i = 0; i < length-1; i++){
         switch (numbers[i]){
             case 1:
-                new_array[i] = 1;
+                new_array[i] = '1';
                 break;
             case 2:
-                new_array[i] = 2;
+                new_array[i] = '2';
                 break;
             case 3:
-                new_array[i] = 3;
+                new_array[i] = '3';
                 break;
             case 4:
-                new_array[i] = 4;
+                new_array[i] = '4';
                 break;
             case 5:
-                new_array[i] = 5;
+                new_array[i] = '5';
                 break;
             case 6:
-                new_array[i] = 6;
+                new_array[i] = '6';
                 break;
             case 7:
-                new_array[i] = 7;
+                new_array[i] = '7';
                 break;
             case 8:
-                new_array[i] = 8;
+                new_array[i] = '8';
                 break;
             case 9:
-                new_array[i] = 9;
+                new_array[i] = '9';
                 break;
             case 10:
                 new_array[i] = 'A';
@@ -69,7 +69,7 @@ void hexDigits(int *numbers,int length){
                 break;
         }
     }
-     for(int i = 0; i < length; i++){
+     for(int i = 0; i < length-1; i++){
         cout << i << " " << numbers[i] << " " << new_array[i] << endl;
     }
     delete [] numbers;
