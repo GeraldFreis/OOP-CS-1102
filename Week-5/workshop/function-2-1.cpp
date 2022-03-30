@@ -69,7 +69,7 @@ void hexDigits(int *numbers,int length){
                 break;
         }
     }
-     for(int i = 0; i < length-1; i++){
+     for(int i = 0; i < length; i++){
         cout << i << " " << numbers[i] << " " << new_array[i] << endl;
     }
     delete [] numbers;
