@@ -1,6 +1,13 @@
 #include "aircraft.h"
 // #include "person.h"
 
+aircraft::aircraft(){
+    person pilot("", 1);
+    Pilot = pilot;
+    Co_Pilot = pilot;
+    callsign = "";
+};
+
 aircraft::aircraft(std::string callsign,person thePilot, person theCoPilot){  // constructor
     callsign = callsign;
     Pilot = thePilot;

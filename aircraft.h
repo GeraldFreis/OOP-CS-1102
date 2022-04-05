@@ -10,6 +10,7 @@ class aircraft{
     
     public:
         // a pilot and copilot must be provided when creating an aircraft
+        aircraft();
         aircraft(std::string callsign, person thePilot, person theCoPilot);
         void setPilot(person thePilot);  // change the pilot
         person getPilot();  // returning the pilot object
