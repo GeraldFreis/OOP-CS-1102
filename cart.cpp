@@ -3,7 +3,7 @@
 
 
 cart::cart(){  // create an empty cart object
-            meerkat *meerkats = new meerkat[4];
+    meerkat *meerkats = new meerkat[4];
 };         
 
 bool cart::addMeerkat(meerkat cat){ // adds a meerkat to the cart, returns false if full
