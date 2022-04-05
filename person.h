@@ -5,10 +5,7 @@ class person{
         std::string name;
         int salary;
     public:
-    person(){
-        std::string name = "";
-        int salary = 0;
-    };
+    person();
     person(std::string myName,int Salary);// a name and salary must be provided to create a person
     void setName(std::string myName);     // change the person's name
     std::string getName();
