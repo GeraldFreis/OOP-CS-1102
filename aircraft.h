@@ -1,5 +1,5 @@
 #include <iostream>
-#include "person.h"
+// #include "person.h"
 using std::cout;
 
 class aircraft{

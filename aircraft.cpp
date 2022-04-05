@@ -1,5 +1,4 @@
 #include "aircraft.h"
-// #include "person.h"
 
 aircraft::aircraft(){
     person pilot("", 1);
