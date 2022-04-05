@@ -27,9 +27,5 @@ int main(){
     Cart.addMeerkat(Meerkat2);
     Cart.addMeerkat(Meerkat3);
     Cart.addMeerkat(Meerkat4);
-    cout << Cart.addMeerkat(Meerkat5) << "\n";
-
-    // Cart.emptyCart();
-    // Cart.printMeerkats();
-
+    // cout << Cart.addMeerkat(Meerkat5) << "\n";
 };
