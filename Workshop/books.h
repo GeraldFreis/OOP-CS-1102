@@ -1,13 +1,12 @@
 #include <iostream>
-using std::cout; std::string;
-
+using namespace std;
 class Books{
     private: 
         int id;
         std::string name;
         std::string author;
         int numberofbook;
-        
+
     public:
         Books();
         Books(int _id, std::string _name, std::string _author, int _numberofbook);

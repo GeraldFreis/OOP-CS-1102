@@ -1,6 +1,6 @@
 #include <iostream>
 #include "books.h"
-using std::cout; std::string;
+using namespace std;
 
 class Library{
     private:
@@ -10,8 +10,9 @@ class Library{
     
     public:
         Library();
-        Library(int _booktypes, std::string _booknames);
+        Library(int _booktypes, std::string _booknames[]);
         void returnbook(std::string _bookname);
-        void borrowbook(std::string _bookname)
-        ~Library(){delete [] book; delete [] booknames};
+        void borrowbook(std::string _bookname);
+
+        ~Library(){delete [] book; delete [] booknames;};
 };
