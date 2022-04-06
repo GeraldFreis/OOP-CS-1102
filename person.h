@@ -4,6 +4,7 @@ class person{
     private:
         std::string name;
         int salary;
+        
     public:
         person();
         person(std::string myName,int Salary);// a name and salary must be provided to create a person

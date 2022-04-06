@@ -2,7 +2,7 @@
 #include "person.h"
 using std::cout;
 
-class aircraft{
+class aircraft: private person{
     private:
         std::string callsign;
         person Pilot;
