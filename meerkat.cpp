@@ -1,8 +1,8 @@
 #include "meerkat.h"
 
 meerkat::meerkat(){
-    name = "";
-    age = 0;
+    std::string name;
+    int age;
 };
 void meerkat::setName(std::string meerName){name = meerName;}
 void meerkat::setAge(int meerAge){age = meerAge;}
