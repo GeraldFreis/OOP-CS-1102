@@ -13,7 +13,7 @@ aircraft::aircraft(std::string callsign,person thePilot, person theCoPilot){  //
     Co_Pilot = theCoPilot;
 }
 void aircraft::setPilot(person thePilot){  // change the pilot
-    Pilot =thePilot;
+    Pilot = thePilot;
 }
 
 person aircraft::getPilot(){  // returning the pilot
