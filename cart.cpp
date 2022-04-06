@@ -24,7 +24,12 @@ void cart::emptyCart(){ // remove all meerkats from the cart
 };              
 void cart::printMeerkats(){  // print the name, a space, the age, then a new line
     for(int i = 0; i < 4; i++){
-        cout << meerkats[i].getName() << " " << meerkats[i].getAge() << "\n";
+        if(meerkats[i].getName()==""){
+            continue;
+        }
+        else{
+            cout << meerkats[i].getName() << " " << meerkats[i].getAge() << "\n";
+        }
     }
 }         
 
