@@ -1,7 +1,7 @@
 #include "person.h"
 person::person(){
-    name = "";
-    salary = 0;
+    std::string name;
+    int salary;
 };
 person::person(std::string myName, int Salary){
     name = myName;
