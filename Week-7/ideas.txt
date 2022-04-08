@@ -1,1 +1,4 @@
 Path finding algorithm
+-> Djikstra's algorithm
+iterates ffrom a node to those around it. Takes the node the least distance from the starting point
+and then calls that node closed
