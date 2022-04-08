@@ -1,4 +1,8 @@
 Path finding algorithm
 -> Djikstra's algorithm
-iterates ffrom a node to those around it. Takes the node the least distance from the starting point
+iterates from a node to those around it. Takes the node the least distance from the starting point
 and then calls that node closed
+I need a gui and I need the player / user to be able to draw something on a black background:
+* user needs to pick a colour to draw with, blue represents beginning
+* red represents end
+* green represents a divide between the beginning and end
