@@ -6,3 +6,9 @@ I need a gui and I need the player / user to be able to draw something on a blac
 * user needs to pick a colour to draw with, blue represents beginning
 * red represents end
 * green represents a divide between the beginning and end
+
+
+sfml address:
+/opt/homebrew/Cellar/sfml/2.5.1_1
+to compile:
+g++ main.cpp -I/opt/homebrew/Cellar/sfml/2.5.1_1/include/ -L//opt/homebrew/Cellar/sfml/2.5.1_1/lib -lsfml-graphics -lsfml-window -lsfml-system
