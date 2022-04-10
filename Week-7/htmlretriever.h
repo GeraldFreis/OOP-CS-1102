@@ -1,4 +1,5 @@
 #include <iostream>
+// #include "addtodictionary.cpp"
 using std::string;
 /*{
 // attrs{
@@ -19,13 +20,24 @@ using std::string;
 
 class HtmlRetriever{
     protected:
-        static const string website_url; // the url of the website we are using 
+        string website_url; // the url of the website we are using 
         string *htmlstring = new string[maxnum];  // the array of strings we can possibly initiate in the heap
         int htmllength; // value we can reassign the array of strings to if set
     
     public:
+        // constructors and destructors
         HtmlRetriever(); // default constructor
-        HtmlRetriever(int linesofhtml);
-        HtmlRetriever(string _website_url);
-        ~HtmlRetriever();
+        HtmlRetriever(const int linesofhtml); // constructor when the lines of html are provided
+        HtmlRetriever(const string _website_url); // constructor when a different website wants to be used
+        ~HtmlRetriever(); // default destructor
+
+        // member functions
+        const void set_url(string new_url);
+        void set_lines(int lines);
+        
+        // opening website
+        void opensite();
+
+        // adding the string to the dictionary
+        friend const void AddhHmlToDictionary();
 };
