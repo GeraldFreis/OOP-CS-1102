@@ -53,5 +53,15 @@
         destructor(): deletes timeslot
 
 5. add gui to display schedule if timeslot
+    1. create headers initiated from csv that takes the days
+    2. create boxes to store the schedule / timeslot
+    3. store values into boxes
+    4. show to user
 
-6. 
+
+6. Take values of the coming weeks' temp from internet:
+    1. establish tcp/ip connection
+    2. authenticate
+    3. recieve package
+    4. html parser
+    5. output html to csv
