@@ -28,4 +28,9 @@
         3. return schedule created by the classes as a string
 
     Behaviours
-        1. 
+        1. checkingdays() {void}: updates the schedule property in the class
+            calls either the Weekdays or Weekends class
+        2. getschedule() {string}: returns the schedule
+
+4. Weekends and Weekdays() {classes}
+    inherit from each other main functions
