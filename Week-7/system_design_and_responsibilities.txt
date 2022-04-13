@@ -35,3 +35,21 @@
 4. Weekends and Weekdays() {classes}
     inherit from each other main functions
     
+    Responsibilities:
+        1. Take the current row and produce a timeslot, or multiple timeslots of when Frikki can be walked
+        2. return this timeslot
+    
+    * note:
+        Best way to go about doing this timeslot and initialisation?:
+            Would it be to initialise an array of objects and then just change the timeslot of each and return this timeslot
+            could I create a collective array returning the timeslots of each individual object:
+                Store that as a function in the InterpretingCSV class:
+                    definitely could
+
+    Behaviour:
+        constructor(): initialises a pointer in the heap for the timeslot(s)
+        derivetimeslot(row) {void}: sets the timeslot(s) property of the class
+        gettimeslot() {int*}: returns a pointer to the timeslot
+        destructor(): deletes timeslot
+
+5. add gui to display schedule if timeslot
