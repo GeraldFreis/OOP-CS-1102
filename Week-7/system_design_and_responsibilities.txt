@@ -1,0 +1,9 @@
+// Design for the system / program
+
+1. main.cpp
+    Responsibilities
+        1. Calling a function to read csv file with the weather for the coming days
+        2. Take the matrix from the function above and pass into a class
+            -> This class breaks the matrix into weekends and weekdays and calls the respective
+                Weekdays, or Weekends classes to analyse and produce an output that we pass back to the calling class
+        3. 
