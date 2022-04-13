@@ -39,3 +39,8 @@ Deconstruction raw OOP:
 3. class for reading data and producing an outcome
 -> 3. class for weekends and weekdays
 
+
+Continuation and problems:
+* we need to ping the website at 134.178.64.211
+-> ask for packages after our tcp/ip is established
+and if we get a 200 ok we can proceed
