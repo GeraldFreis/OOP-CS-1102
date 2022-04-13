@@ -53,3 +53,5 @@
         destructor(): deletes timeslot
 
 5. add gui to display schedule if timeslot
+
+6. 
