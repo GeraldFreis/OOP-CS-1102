@@ -2,8 +2,30 @@
 
 1. main.cpp
     Responsibilities
-        1. Calling a function to read csv file with the weather for the coming days
+        1. Calling a class to read csv file with the weather for the coming days
         2. Take the matrix from the function above and pass into a class
             -> This class breaks the matrix into weekends and weekdays and calls the respective
                 Weekdays, or Weekends classes to analyse and produce an output that we pass back to the calling class
-        3. 
+        3. prints out the schedule produced
+
+2. ReadingCSV {Class}
+    Responsibilities
+        1. check csv exists (bool)
+        2. read csv into a matrix (void)
+        3. getmatrix, returns the matrix (string function)
+
+    Behaviours
+        1. csvexists() {bool}: returns true if file exists in directory, else returns false
+        2. checklength() {void}: checks the amnt of lines in the csv, so we can initialise a matrix
+        3. readcsv() {void}: reads the file and saves it into the string matrix that is instantiated in constructor of class
+        4. getmatrix() {string}: returns a pointer to the first object in the matrix
+
+3. InterpretingCSV() {Class}
+    Responsibilities
+        1. Take the pointer to the first element of the matrix and iterate over every line in the matrix
+        2. check if the first element in the subset of the matrix (i.e row), is a weekend or weekdays
+            if a weekday call the Weekdays class, else Weekends class
+        3. return schedule created by the classes as a string
+
+    Behaviours
+        1. 
