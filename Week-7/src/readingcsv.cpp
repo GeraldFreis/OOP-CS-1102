@@ -3,17 +3,22 @@
 // constructors
 ReadingCSV::ReadingCSV(){ // default
     std::string data_matrix[3] = {"Tuesday", "13", "24"};
-    file = 'Week-7/futuretemp.csv';
-    filename = &file;
+    filename = 'Week-7/futuretemp.csv';
 };
 
-ReadingCSV::ReadingCSV(char _filename){ // parameterized
-    char file = _filename;
-    filename = &file;
+ReadingCSV::ReadingCSV(std::string _filename){ // parameterized
+    filename = _filename;
     std::string data_matrix[3] = {"","",""};
 };
 
 // member functions
 void ReadingCSV::csvtomatrix(){
+    std::ifstream file(filename);
+    std::string row;
 
+    while(file.good()){
+        getline(file, row);
+    }
+
+    cout << row << "\n"; // printing without resetting buffer
 };

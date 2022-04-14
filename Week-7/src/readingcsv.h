@@ -1,16 +1,17 @@
 #include <iostream>
+#include <fstream>
+#include <sstream>
 using std::cout;
 
 class ReadingCSV{
     protected:
         std::string *data_matrix = new std::string[3];
-        char file;
-        const char *filename;
+        std::string filename;
 
     public:
         // constructors
         ReadingCSV();
-        ReadingCSV(char filename);
+        ReadingCSV(std::string filename);
 
         // member functions
         void csvtomatrix(); // converts the csv to a matrix 
