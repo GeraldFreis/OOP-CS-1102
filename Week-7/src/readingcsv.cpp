@@ -8,7 +8,7 @@ ReadingCSV::ReadingCSV(){ // default
 
 ReadingCSV::ReadingCSV(std::string _filename){ // parameterized
     filename = _filename;
-    std::string data_matrix[3] = {"","",""};
+    // calling a function to find the number of lines in the csv
 };
 
 // member functions
@@ -21,4 +21,6 @@ void ReadingCSV::csvtomatrix(){
     }
 
     cout << row << "\n"; // printing without resetting buffer
+
+    file.close();
 };

@@ -5,7 +5,7 @@ using std::cout;
 
 class ReadingCSV{
     protected:
-        std::string *data_matrix = new std::string[3];
+        std::string *data_matrix = nullptr;
         std::string filename;
 
     public:
