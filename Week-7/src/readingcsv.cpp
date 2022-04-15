@@ -15,9 +15,11 @@ ReadingCSV::ReadingCSV(std::string _filename){ // parameterized
 void ReadingCSV::csvtomatrix(){
     std::ifstream file(filename);
     std::string row;
+    int index = 0;
 
     while(file.good()){
-        getline(file, row);
+        getline(file, data_matrix[index]);
+        index++;
     }
 
     cout << row << "\n"; // printing without resetting buffer
