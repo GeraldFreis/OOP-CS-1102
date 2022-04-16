@@ -2,20 +2,22 @@
 #include <fstream>
 #include <sstream>
 using std::cout;
+using std::string;
 
 class ReadingCSV{
     protected:
-        std::string *data_matrix = nullptr;
-        std::string filename;
+        string **data_matrix = new string*[100];
+        string filename;
+        int numberoflines; // the number of lines in the csv
 
     public:
         // constructors
         ReadingCSV();
-        ReadingCSV(std::string filename);
+        ReadingCSV(string filename);
 
         // member functions
         void csvtomatrix(); // converts the csv to a matrix 
-        std::string *getdata(); // returns a pointer to the matrix
+        string *getdata(); // returns a pointer to the matrix
 
         // destructor
         ~ReadingCSV(){delete [] data_matrix;};
