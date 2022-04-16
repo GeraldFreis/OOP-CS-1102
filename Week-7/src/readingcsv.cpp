@@ -5,7 +5,7 @@ extern int linenumber(string); // function to find the number of lines in the fi
 // constructors
 ReadingCSV::ReadingCSV(){ // default
     std::string data_matrix[3] = {"Tuesday", "13", "24"};
-    filename = 'Week-7/futuretemp.csv';
+    filename = "Week-7/futuretemp.csv";
 };
 
 ReadingCSV::ReadingCSV(std::string _filename){ // parameterized
@@ -26,11 +26,17 @@ ReadingCSV::ReadingCSV(std::string _filename){ // parameterized
 void ReadingCSV::csvtomatrix(){
     std::ifstream file(filename);
     std::string row;
-    int index = 0;
+    int index_row = 0;
 
-    while(file.good()){
-        getline(file, data_matrix[index][index]);
-        index++;
+    while(file.good()){ // while we are still in the range of the file
+        int index_column = 0;
+
+        // iterating over the elements in the row and capturing them
+        for(int i = 0; i < 3; i++){
+            getline(file, data_matrix[index_row][index_column]);
+            index_column++;
+        }
+        index_row++;
     }
 
     cout << row << "\n"; // printing without resetting buffer
