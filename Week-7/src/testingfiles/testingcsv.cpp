@@ -7,9 +7,9 @@ extern int linenumber(string);
 
 class TestingCSV{
     protected:
-        string **data_matrix;
-        string filename;
-        int numberoflines;
+        string **data_matrix; // 2D matrix to hold the information of the csv
+        string filename; // name of file
+        int numberoflines; // number of lines found by linenumber.cpp
     
     public:
         // constructors
@@ -62,10 +62,11 @@ void TestingCSV::readingdata(){
     while(file.good()){ // while we are still in the range of the file
 
         // iterating over the elements in the row and capturing them into their respective positions in the matrix
-        for(int i = 0; i < 3; i++){
-            getline(file, data_matrix[index_row][i]);
-            cout << data_matrix[index_row][i] << "\n";
+        for(int i = 0; i < 2; i++){
+            getline(file, data_matrix[index_row][i], ',');
+            // cout << data_matrix[index_row][i] << "\n";
         }
+        getline(file, data_matrix[index_row][2]);
         index_row++;
     }
 }
@@ -90,11 +91,14 @@ TestingCSV::~TestingCSV(){
     delete [] data_matrix; // deleting data matrix
 }
 
+// main function
+
 int main(){
+
     string _filename = "futuretemp.csv";
     TestingCSV object(_filename); // initialising the object
     object.readingdata();
-    // object.printingdata();
+    object.printingdata();
 
     return 0;
 }
