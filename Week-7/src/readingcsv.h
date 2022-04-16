@@ -6,7 +6,7 @@ using std::string;
 
 class ReadingCSV{
     protected:
-        string **data_matrix = new string*[100];
+        string **data_matrix;
         string filename;
         int numberoflines; // the number of lines in the csv
 
@@ -17,9 +17,10 @@ class ReadingCSV{
 
         // member functions
         void csvtomatrix(); // converts the csv to a matrix 
-        string *getdata(); // returns a pointer to the matrix
+        string **getdata(); // returns a pointer to the matrix
+        void printdata(); // prints the data matrix
 
         // destructor
-        ~ReadingCSV(){delete [] data_matrix;};
+        ~ReadingCSV();
 
 };

@@ -1,23 +1,28 @@
 #include "readingcsv.h"
 
-extern int linenumber(string); // function to find the number of lines in the file
-
+extern int linenumber(string);
 // constructors
 ReadingCSV::ReadingCSV(){ // default
-    std::string data_matrix[3] = {"Tuesday", "13", "24"};
+    // initialising member vars
     filename = "Week-7/futuretemp.csv";
+    numberoflines = linenumber(filename);
+    data_matrix = new string*[numberoflines];
+
+    // initialising sub array of 3 columns for each row in the matrix
+    for(int i = 0; i < numberoflines; i++){
+        data_matrix[i] = new string[3];
+    }
 };
 
 ReadingCSV::ReadingCSV(std::string _filename){ // parameterized
+    // initialising member vars
     filename = _filename;
-
-    // calling a function to find the number of lines in the csv
     numberoflines = linenumber(filename);
+    data_matrix = new string*[numberoflines];
 
-    // initialising the data matrix
-    string **data_matrix = new string*[numberoflines];
-    for(int i = 0; i < 3; i++){
-        data_matrix[i] = new string[3]; // creating 3 columns for every row in the data matrix
+    // initialising sub array of 3 columns for each row in the matrix
+    for(int i = 0; i < numberoflines; i++){
+        data_matrix[i] = new string[3];
     }
 
 };
@@ -29,19 +34,26 @@ void ReadingCSV::csvtomatrix(){
     int index_row = 0;
 
     while(file.good()){ // while we are still in the range of the file
-        int index_column = 0;
 
-        // iterating over the elements in the row and capturing them
-        for(int i = 0; i < 3; i++){
-            getline(file, data_matrix[index_row][index_column]);
-            index_column++;
+        // iterating over the elements in the row and capturing them into their respective positions in the matrix
+        for(int i = 0; i < 2; i++){
+            getline(file, data_matrix[index_row][i], ',');
+            // cout << data_matrix[index_row][i] << "\n";
         }
+        getline(file, data_matrix[index_row][2]);
         index_row++;
     }
+};
 
-    cout << row << "\n"; // printing without resetting buffer
+string **ReadingCSV::getdata(){
+    return data_matrix; // returning a pointer to the matrix
+};
 
-    file.close();
+void ReadingCSV::printdata(){
+
+    for(int i = 0; i < numberoflines; i++){ // iteraitng over every line and printing the data
+        cout << data_matrix[i][0] << " " <<data_matrix[i][1] << " " << data_matrix[i][2] << "\n";
+    }
 };
 
 // destructor
@@ -52,4 +64,4 @@ ReadingCSV::~ReadingCSV(){
     }
 
     delete [] data_matrix; // deleting data matrix
-}
+};

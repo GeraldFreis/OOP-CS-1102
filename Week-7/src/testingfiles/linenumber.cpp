@@ -11,13 +11,15 @@ int linenumber(string file)
     std::ifstream newfile(file, std::ifstream::binary); // initialising stream
 
     //  finding length of the file
-    newfile.seekg (0, newfile.end);
-    int length = newfile.tellg();
-    newfile.seekg(0, newfile.beg);
+    std::string array[100]; // initialising an array of one hundred rows as that is the max that the text will include
+    int counter = 0;
 
-
+    while(getline(newfile, array[counter])){ // reading the current line into the ith array
+        counter += 1; 
+    }
+    
     newfile.close();
 
-    return length;
+    return counter;
 }
 
