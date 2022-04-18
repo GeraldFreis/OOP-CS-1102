@@ -1,6 +1,7 @@
 #include <iostream>
 #include "src/readingcsv.h" // class that reads the csv file
 #include "src/interpretingcsv.h"
+
 using std::cout;
 
 extern int linenumber(string);
@@ -24,7 +25,7 @@ int main(){
 
     for(int i = 0; i < numberoflines; i++){
         interpretarray[i].setdata(returnedmatrix[i][0], returnedmatrix[i][1], returnedmatrix[i][2]);
-        interpretarray[i].printdata();
+        interpretarray[i].findingschedule();
     }
 
     delete [] interpretarray;

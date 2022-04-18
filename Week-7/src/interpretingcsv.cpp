@@ -26,7 +26,9 @@ void InterpretingCSV::findingschedule(){
         || day == "Wednesday"
         || day == "Thursday"
         || day == "Friday"){
-
+            Weekdays object(min, max);
+            object.calcschedule();
+            object.printschedule();
         }
     else if(day == "Saturday" 
         || "Sunday"){
