@@ -1,8 +1,8 @@
 #include <iostream>
-#include "day.h"
+#include "Weekdays.h"
 using std::cout; using std::string;
 
-class Weekends: protected Day{
+class Weekends: protected Weekdays{
     public:
         Weekends();
         void calcschedule();
