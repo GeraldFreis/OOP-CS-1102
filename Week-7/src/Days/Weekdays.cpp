@@ -34,6 +34,7 @@ void Weekdays::settemps(int min, int max){
         if the max temp is greater than 30, we have to walk on the later side of dinner (1850 -> 1933)
         if the min temp is less than 14, we have to walk on the earlier side of dinner (1550 -> 1750)
         if the min temp is greater than or equal to 15 and the max temp is less than 27 we should walk closer to dinner (1650 -> 1750)
+        if the min temp is 14 then we walk exactly at 1633 to 1675
 */
 void Weekdays::calcschedule(){
     if(maxtemp > 30){
@@ -50,7 +51,12 @@ void Weekdays::calcschedule(){
         lowerschedbound = 1650;
         upperschedbound = 1750;
     }
-    
+
+    else if(mintemp == 15){
+        lowerschedbound = 1633;
+        upperschedbound = 1675;
+    }
+
     else{
         schedule[0] = 0;
         schedule[1] = 0;
