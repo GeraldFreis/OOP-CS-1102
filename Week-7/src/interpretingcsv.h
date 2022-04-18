@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Days/Weekdays.h"
 using std::cout;
 using std::string;
 
@@ -19,6 +20,6 @@ class InterpretingCSV{
         // member functions
         void findingschedule(); // calls either weekends or weekdays dependent on the day
         void setdata(string _day, string _min, string _max); // enables me to set the data for each variable
-        int getschedule();
-        void printdata();
+        int getschedule(); // returns the schedule
+        void printdata(); // prints the data
 };

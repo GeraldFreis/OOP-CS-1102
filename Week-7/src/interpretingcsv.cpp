@@ -1,4 +1,5 @@
 #include "interpretingcsv.h"
+
 // constructors
 InterpretingCSV::InterpretingCSV(){ // default constructor
     ptr = nullptr;
@@ -7,7 +8,7 @@ InterpretingCSV::InterpretingCSV(){ // default constructor
     int max = 0;
 };
 
-InterpretingCSV::InterpretingCSV(std::string *_ptr){ // parameterized constructor
+InterpretingCSV::InterpretingCSV(string *_ptr){ // parameterized constructor
     ptr = _ptr;
     day = ptr[0];
 
@@ -16,6 +17,9 @@ InterpretingCSV::InterpretingCSV(std::string *_ptr){ // parameterized constructo
     int max = std::stoi(ptr[2]);
 }   
 
+/*
+    Planning the findingschedule functions
+*/
 void InterpretingCSV::findingschedule(){
     if(day=="Monday"
         || day == "Tuesday"
@@ -35,6 +39,8 @@ void InterpretingCSV::findingschedule(){
 
 void InterpretingCSV::setdata(string _day, string _min, string _max){
     day = _day;
+
+    // explicit conversion from string to integer of the min and max values
     min = stoi(_min);
     max = stoi(_max);
 };
