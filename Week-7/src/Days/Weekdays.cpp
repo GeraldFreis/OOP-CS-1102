@@ -52,7 +52,7 @@ void Weekdays::calcschedule(){
         upperschedbound = 1750;
     }
 
-    else if(mintemp == 15){
+    else if(mintemp == 14){
         lowerschedbound = 1633;
         upperschedbound = 1675;
     }
