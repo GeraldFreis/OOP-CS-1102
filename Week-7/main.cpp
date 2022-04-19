@@ -12,7 +12,7 @@ int main(){
     
     ReadingCSV object(_filename); // initialising the reading csv object
     object.csvtomatrix();
-    object.printdata(); // printing the data
+    // object.printdata(); // printing the data
     int numberoflines = linenumber(_filename);
 
     // initialising the interpreting csv objects
