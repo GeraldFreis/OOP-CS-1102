@@ -30,10 +30,10 @@ class Weekdays{
         Weekdays(int min, int max); // parameterized constructor
 
         // member functions
-        void settemps(int min, int max); // sets the min and max temp
-        void calcschedule(); // calculates the schedule and assigns it to schedule var
-        int &getschedule(); // returns address of schedule
-        void printschedule(); // prints schedule
+        virtual void settemps(int min, int max); // sets the min and max temp
+        virtual void calcschedule(); // calculates the schedule and assigns it to schedule var
+        virtual int &getschedule(); // returns address of schedule
+        virtual void printschedule(); // prints schedule
 
 
         // destructor {virtual as its a superclass (we want dynamic binding)}
