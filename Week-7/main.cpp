@@ -21,8 +21,6 @@ int main(){
     // interpreting the data row by row:
     std::string **returnedmatrix = object.getdata();
 
-    cout << "\n";
-
     for(int i = 0; i < numberoflines; i++){
         interpretarray[i].setdata(returnedmatrix[i][0], returnedmatrix[i][1], returnedmatrix[i][2]);
         interpretarray[i].findingschedule();
