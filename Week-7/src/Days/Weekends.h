@@ -14,6 +14,7 @@ Behaviours
     getschedule() returns the address of the first element in the schedule array 
     printschedule() prints schedule
 */
+
 class Weekends: protected Weekdays{
     public:
         // constructor
