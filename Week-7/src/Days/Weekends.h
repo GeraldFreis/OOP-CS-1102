@@ -30,5 +30,6 @@ class Weekends: public Weekdays{
 
         //member functions
         void calcschedule(); // overriden findingschedule from superclass
+        void printschedule();
         ~Weekends();
 };

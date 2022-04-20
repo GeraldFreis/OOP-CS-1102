@@ -93,6 +93,10 @@ void Weekends::calcschedule(){
     }
 };
 
+void Weekends::printschedule(){
+    cout << schedule[0] << " " << schedule[1] << "\n";
+};
+
 Weekends::~Weekends(){
     delete [] schedule_array_1;
     delete [] schedule_array_2;
