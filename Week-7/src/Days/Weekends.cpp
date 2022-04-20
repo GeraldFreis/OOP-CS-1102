@@ -83,6 +83,7 @@ void Weekends::calcschedule(){
         schedule[1] = *schedule_array_2;
     }
     else{
+        cout << mintemp << 
         cout << "No" << "\n";
     }
 };
