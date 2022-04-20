@@ -67,7 +67,7 @@ void Weekends::calcschedule(){
         schedule[0] = *schedule_array_1;
         schedule[1] = *schedule_array_2;
     }
-    
+
     // warm day
     else if(mintemp >= 23 && maxtemp >= 26){
         // separating the schedules into two arrays
@@ -92,7 +92,13 @@ void Weekends::calcschedule(){
 };
 
 Weekends::~Weekends(){
-    delete [] schedule_array_1;
-    delete [] schedule_array_2;
-    delete [] schedule;
+    if(schedule_array_1[0]!=0){
+        delete [] schedule_array_1;
+        delete [] schedule_array_2;
+        delete [] schedule;
+    }
+    
+    else{
+        delete [] schedule;
+    }
 }
