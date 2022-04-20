@@ -36,12 +36,13 @@ void InterpretingCSV::findingschedule(){
             // cout << min << " " << max << "\n";
             object.calcschedule();
             object.printschedule();
-            cout << "here" << "\n";
+            
         }
     else{
         throw
             "Not valid";
     }
+    cout << "here" << "\n";
 }
 
 void InterpretingCSV::setdata(string _day, string _min, string _max){
