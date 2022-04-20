@@ -1,6 +1,6 @@
 #include "Weekends.h"
 
-Weekends::Weekends(){
+Weekends::Weekends(){ // default constructor
     schedule_array_1 = new int[2];
     schedule_array_2 = new int[2];
     schedule = new int[2];
@@ -12,16 +12,16 @@ Weekends::Weekends(){
     maxtemp = 0;
 };
 
-Weekends::Weekends(int min, int max){
+Weekends::Weekends(int min, int max){ // parameterized constructor
     schedule_array_1 = new int[2];
     schedule_array_2 = new int[2];
     schedule = new int[2];
 
     lowerschedbound = 0;
     upperschedbound = 0;
+
     mintemp = min;
     maxtemp = max;
-    // cout << mintemp << " " << maxtemp <<"\n";
 };
 
 
