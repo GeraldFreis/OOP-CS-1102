@@ -21,7 +21,7 @@ Weekends::Weekends(int min, int max){
     upperschedbound = 0;
     mintemp = min;
     maxtemp = max;
-    cout << mintemp << " " << maxtemp <<"\n";
+    // cout << mintemp << " " << maxtemp <<"\n";
 };
 
 
