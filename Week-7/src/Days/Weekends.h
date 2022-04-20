@@ -14,7 +14,6 @@ Behaviours
     getschedule() returns the address of the first element in the schedule array 
     printschedule() prints schedule
 */
-
 class Weekends: public Weekdays{
     protected:
         int *schedule_array_1; // array to hold the first time period

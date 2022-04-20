@@ -15,7 +15,6 @@ Behaviours
     getschedule {takes the schedule and returns the address of the array}
     printschedule {prints the calculated schedule}
 */
-
 class Weekdays{
     protected:
         int mintemp;
@@ -36,5 +35,5 @@ class Weekdays{
         void printschedule(); // prints schedule
 
         // destructor {virtual as its a superclass (we want dynamic binding)}
-        ~Weekdays();
+        virtual ~Weekdays();
 };

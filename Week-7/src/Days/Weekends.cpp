@@ -92,7 +92,7 @@ void Weekends::calcschedule(){
 };
 
 Weekends::~Weekends(){
-    if(schedule_array_1[0]==0){
+    if(schedule_array_1[0]!=0){
         delete [] schedule_array_1;
         delete [] schedule_array_2;
         delete [] schedule;
