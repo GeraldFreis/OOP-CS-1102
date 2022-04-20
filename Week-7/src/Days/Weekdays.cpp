@@ -37,11 +37,11 @@ void Weekdays::settemps(int min, int max){
         if the min temp is 14 then we walk exactly at 1633 to 1675
 */
 void Weekdays::calcschedule(){
-    if(maxtemp > 30){
+    if(maxtemp >= 30){
         lowerschedbound = 1850;
         upperschedbound = 1933;
     }
-    
+
     else if(mintemp < 14){
         lowerschedbound = 1550;
         upperschedbound = 1750;
