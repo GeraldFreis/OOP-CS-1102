@@ -101,4 +101,5 @@ Weekends::~Weekends(){
     else{
         delete [] schedule;
     }
+    cout << "Here";
 }
