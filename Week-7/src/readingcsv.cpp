@@ -3,6 +3,7 @@
 extern int linenumber(string);
 // constructors
 ReadingCSV::ReadingCSV(){ // default
+
     // initialising member vars
     filename = "Week-7/futuretemp.csv";
     numberoflines = linenumber(filename);
@@ -15,6 +16,7 @@ ReadingCSV::ReadingCSV(){ // default
 };
 
 ReadingCSV::ReadingCSV(std::string _filename){ // parameterized
+
     // initialising member vars
     filename = _filename;
     numberoflines = linenumber(filename);
@@ -24,7 +26,6 @@ ReadingCSV::ReadingCSV(std::string _filename){ // parameterized
     for(int i = 0; i < numberoflines; i++){
         data_matrix[i] = new string[5];
     }
-
 };
 
 // member functions
@@ -40,7 +41,7 @@ void ReadingCSV::csvtomatrix(){
             getline(file, data_matrix[index_row][i], ',');
             // cout << data_matrix[index_row][i] << "\n";
         }
-        
+
         getline(file, data_matrix[index_row][2]);
         index_row++;
     }
@@ -51,7 +52,6 @@ string **ReadingCSV::getdata(){
 };
 
 void ReadingCSV::printdata(){
-
     for(int i = 0; i < numberoflines; i++){ // iteraitng over every line and printing the data
         cout << data_matrix[i][0] << " " <<data_matrix[i][1] << " " << data_matrix[i][2] << "\n";
     }
@@ -59,6 +59,7 @@ void ReadingCSV::printdata(){
 
 // destructor
 ReadingCSV::~ReadingCSV(){
+
     // deleting each row in the data matrix
     for(int i = 0; i < numberoflines; i++){
         delete [] data_matrix[i];
