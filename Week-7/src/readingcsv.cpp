@@ -40,6 +40,7 @@ void ReadingCSV::csvtomatrix(){
             getline(file, data_matrix[index_row][i], ',');
             // cout << data_matrix[index_row][i] << "\n";
         }
+        
         getline(file, data_matrix[index_row][2]);
         index_row++;
     }
