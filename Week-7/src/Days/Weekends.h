@@ -16,6 +16,10 @@ Behaviours
 */
 
 class Weekends: protected Weekdays{
+    protected:
+        int *schedule_array_1; // array to hold the first time period
+        int *schedule_array_2; // array to hold the second time period
+
     public:
         // constructor
         Weekends(); // default constructor
