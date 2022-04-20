@@ -40,6 +40,7 @@ Rules for finding schedule on weekends:
         we can walk frikki from 9:30 - 11:30 and after dinner (6:30-8)
 */
 void Weekends::calcschedule(){
+
     // cold day
     if(mintemp <= 14 && maxtemp <= 20){
         lowerschedbound = 1100;
@@ -48,6 +49,7 @@ void Weekends::calcschedule(){
         // assigning the bounds to the schedule
         schedule[0] = lowerschedbound;
         schedule[1] = upperschedbound; 
+        cout << "error here ";
     }
 
     // medium temp day
@@ -85,7 +87,7 @@ void Weekends::calcschedule(){
         schedule[0] = *schedule_array_1;
         schedule[1] = *schedule_array_2;
     }
-    
+
     else{
         cout << "Not within the time constraints" << "\n";
     }
