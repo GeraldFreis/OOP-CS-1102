@@ -16,9 +16,13 @@ Behaviours
 */
 class Weekends: public Weekdays{
     protected:
+        //arrays and pointers
         int *schedule_array_1; // array to hold the first time period
         int *schedule_array_2; // array to hold the second time period
-
+        int *schedule; // array to hold both schedules if required
+        
+        // vars
+        int mintemp, maxtemp, lowerschedbound, upperschedbound;
     public:
         // constructor
         Weekends(); // default constructor
