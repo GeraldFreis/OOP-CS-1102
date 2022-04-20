@@ -71,7 +71,7 @@ void Weekdays::printschedule(){
     cout << schedule[0] << " " << schedule[1] << "\n"; // no clearing buffers here
 };
 
-int Weekdays::getschedule(){
+int &Weekdays::getschedule(){
     return schedule[0];
 }
 
