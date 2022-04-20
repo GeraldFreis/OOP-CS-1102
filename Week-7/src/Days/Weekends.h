@@ -15,7 +15,7 @@ Behaviours
     printschedule() prints schedule
 */
 
-class Weekends: protected Weekdays{
+class Weekends: public Weekdays{
     protected:
         int *schedule_array_1; // array to hold the first time period
         int *schedule_array_2; // array to hold the second time period
@@ -26,6 +26,6 @@ class Weekends: protected Weekdays{
         Weekends(int min, int max); // parameterized constructor
 
         //member functions
-        void findingschedule(); // overriden findingschedule from superclass
+        void calcschedule(); // overriden findingschedule from superclass
         ~Weekends();
 };

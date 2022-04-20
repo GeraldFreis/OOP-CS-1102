@@ -38,7 +38,7 @@ Rules for finding schedule on weekends:
     if it is a warm day (mintemp >= 23 && maxtemp > 29)
         we can walk frikki from 9:30 - 11:30 and after dinner (6:30-8)
 */
-void Weekends::findingschedule(){
+void Weekends::calcschedule(){
     // cold day
     if(mintemp < 13 && maxtemp < 20){
         lowerschedbound = 1100;
@@ -87,3 +87,8 @@ void Weekends::findingschedule(){
     }
 };
 
+Weekends::~Weekends(){
+    delete [] schedule_array_1;
+    delete [] schedule_array_2;
+    delete [] schedule;
+}

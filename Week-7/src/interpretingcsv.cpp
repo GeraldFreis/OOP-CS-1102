@@ -32,10 +32,13 @@ void InterpretingCSV::findingschedule(){
         }
     else if(day == "Saturday" 
         || "Sunday"){
-
+            Weekends object(min, max);
+            object.calcschedule();
+            object.printschedule();
         }
     else{
-        
+        throw
+            "Not valid";
     }
 }
 
