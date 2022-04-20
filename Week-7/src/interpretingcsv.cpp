@@ -36,6 +36,7 @@ void InterpretingCSV::findingschedule(){
             // cout << min << " " << max << "\n";
             object.calcschedule();
             object.printschedule();
+            cout << "here" << "\n";
         }
     else{
         throw

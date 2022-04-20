@@ -35,7 +35,6 @@ class Weekdays{
         int &getschedule(); // returns address of schedule
         void printschedule(); // prints schedule
 
-
         // destructor {virtual as its a superclass (we want dynamic binding)}
         ~Weekdays();
 };
