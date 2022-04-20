@@ -41,7 +41,7 @@ Rules for finding schedule on weekends:
 */
 void Weekends::calcschedule(){
     // cold day
-    if(mintemp <= 14 && maxtemp < 20){
+    if(mintemp <= 14 && maxtemp <= 20){
         lowerschedbound = 1100;
         upperschedbound = 1550;
 
