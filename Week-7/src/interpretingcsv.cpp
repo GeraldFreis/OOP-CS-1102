@@ -42,7 +42,6 @@ void InterpretingCSV::findingschedule(){
         throw
             "Not valid";
     }
-    cout << "here" << "\n";
 }
 
 void InterpretingCSV::setdata(string _day, string _min, string _max){

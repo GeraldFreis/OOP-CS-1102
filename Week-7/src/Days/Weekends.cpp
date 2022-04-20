@@ -85,6 +85,7 @@ void Weekends::calcschedule(){
         schedule[0] = *schedule_array_1;
         schedule[1] = *schedule_array_2;
     }
+    
     else{
         cout << "Not within the time constraints" << "\n";
     }
