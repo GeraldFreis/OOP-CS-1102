@@ -71,7 +71,7 @@ void Weekends::calcschedule(){
     }
 
     // warm day
-    else if(mintemp >= 23 && maxtemp >= 26){
+    else if(mintemp >= 22 && maxtemp >= 26){
         // separating the schedules into two arrays
         int lowerschedbound_1 =  950;
         int upperschedbound_1 = 1150;
