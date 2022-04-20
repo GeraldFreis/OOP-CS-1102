@@ -49,6 +49,7 @@ void Weekends::calcschedule(){
         schedule[0] = lowerschedbound;
         schedule[1] = upperschedbound; 
     }
+
     // medium temp day
     else if(15 < mintemp && mintemp < 21 && maxtemp >= 21 && maxtemp <= 26){
         // separating the schedules into two arrays
@@ -66,6 +67,7 @@ void Weekends::calcschedule(){
         schedule[0] = *schedule_array_1;
         schedule[1] = *schedule_array_2;
     }
+    
     // warm day
     else if(mintemp >= 23 && maxtemp >= 26){
         // separating the schedules into two arrays
