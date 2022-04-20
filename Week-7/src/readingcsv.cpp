@@ -10,7 +10,7 @@ ReadingCSV::ReadingCSV(){ // default
 
     // initialising sub array of 3 columns for each row in the matrix
     for(int i = 0; i < numberoflines; i++){
-        data_matrix[i] = new string[3];
+        data_matrix[i] = new string[5];
     }
 };
 
@@ -22,7 +22,7 @@ ReadingCSV::ReadingCSV(std::string _filename){ // parameterized
 
     // initialising sub array of 3 columns for each row in the matrix
     for(int i = 0; i < numberoflines; i++){
-        data_matrix[i] = new string[3];
+        data_matrix[i] = new string[5];
     }
 
 };
