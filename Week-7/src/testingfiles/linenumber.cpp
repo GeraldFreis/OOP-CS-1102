@@ -6,7 +6,7 @@ using std::ifstream;
 using std::ostringstream;
 
 // function to take the file and find the number of lines 
-int linenumber(string file)
+int linenumber(const string file)
 {
     std::ifstream newfile(file, std::ifstream::binary); // initialising stream
 
