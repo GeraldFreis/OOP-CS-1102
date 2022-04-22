@@ -2,13 +2,44 @@
 #include <fstream>
 #include <sstream>
 #include <regex>
+#include <cmath>
 using std::cout;
 using std::string;
 
 extern int linenumber(string);
 
 // function for parsing the information and printing the date
+std::string findingdate(const std::string firstelement, std::string *row){
+    // preconditions = row of elements from the csv
+    // postconditions = returns whether the day of the week is in winter
+    
+    // breaking up the row into sub elements
+    firstelement.c_str(); // casting the string to a char string
+    int date;
 
+    for(int i = 0; i < firstelement.size(); i++){
+        if(firstelement[i] == '/'){
+            int date_tup[2] = {firstelement[i+1], firstelement[i+2]};
+            date = date_tup[0] + date_tup[1];
+        }
+    }
+    // if the date is between a specific range of times then pushing it
+    if(date <= 2 || date >= 11){
+        row[5] = "summer";
+    }
+    else if(date >= 3 && date < 5){
+        row[5] = "autumn";
+    }
+    else if(date >= 5 && date < 8){
+        row[5] = "winter";
+    }
+    else if(date >= 8 && date < 11){
+        row[5] = "spring";
+    }
+    else{
+        perror("Not a valid day");
+    }
+};
 
 class ReadingCSV{
     protected:
