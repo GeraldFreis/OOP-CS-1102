@@ -89,7 +89,8 @@ void Weekends::calcschedule(){
     }
 
     else{
-        cout << "Not within the time constraints" << "\n";
+        // cout << "Not within the time constraints" << "\n";
+        return;
     }
 };
 
