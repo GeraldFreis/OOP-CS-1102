@@ -38,8 +38,7 @@ void InterpretingCSV::findingschedule(){
         }
 
     else{
-        throw
-            "Not valid";
+        cout << "not valid day of the week" << "\n";
     }
 }
 
