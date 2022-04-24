@@ -47,13 +47,57 @@ void ReadingCSV::csvtomatrix(){
     }
 };
 
+void ReadingCSV::calcseason(){
+    // precondition:
+        // passing reference of the row as param
+    // postcondition
+        // changes the fourth element of the row to the season
+    for(int i = 0; i < numberoflines; i++){
+        string date = data_matrix[i][0];
+        
+        // finding the month
+        date.c_str();
+        string month;
+
+        for(int i = 0; i < date.size(); i++){
+            if(date[i] == '/'){
+                month += ((date[i+1]));
+                month += (date[i+2]);
+            }
+        }
+
+        int monthint = stoi(month);
+        
+    //     // changing the month to its seasonal counterpart
+        if(monthint < 3 || monthint >= 11){
+            data_matrix[i][3] = "summer";
+        }
+        else if (monthint >= 3 && monthint < 5){
+            data_matrix[i][3] = "autumn";
+        }
+        else if(monthint >= 5 && monthint < 9)
+        {
+            data_matrix[i][3] = "winter";
+        }
+        else if(monthint >= 9 && monthint < 11){
+            data_matrix[i][3] = "spring";
+        }
+        else{
+            cout << "not in season range" << "\n";
+        }
+    }
+}
+
 string **ReadingCSV::getdata(){
     return data_matrix; // returning a pointer to the matrix
 };
 
 void ReadingCSV::printdata(){
     for(int i = 0; i < numberoflines; i++){ // iteraitng over every line and printing the data
-        cout << data_matrix[i][0] << " " <<data_matrix[i][1] << " " << data_matrix[i][2] << "\n";
+        for(int j = 0; j < 3; j++){
+            cout << data_matrix[i][j] << " "; 
+        }
+        cout << data_matrix[i][4] << "\n";
     }
 };
 
