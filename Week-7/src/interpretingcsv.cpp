@@ -40,6 +40,7 @@ void InterpretingCSV::findingschedule(){
         }
 
     else{
+        cout << day << "\n";
         cout << "not valid day of the week" << "\n";
     }
 }
