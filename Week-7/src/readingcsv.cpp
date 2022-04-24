@@ -67,7 +67,7 @@ void ReadingCSV::calcseason(){
                 // rewriting the day of the week as the first element in the row
                 string previous_letters;
                 for(int j = 0; j < i; j++){
-                    previous_letters += date[i];
+                    previous_letters += (date[j]);
                 }
                 data_matrix[i][0] = previous_letters;
             }
