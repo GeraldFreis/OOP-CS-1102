@@ -65,11 +65,11 @@ void ReadingCSV::calcseason(){
                 month += (date[i+2]);
 
                 // rewriting the day of the week as the first element in the row
-                // string previous_letters;
-                // for(int j = 0; j < i; j++){
-                //     previous_letters += date[i];
-                // }
-                // data_matrix[i][0] = previous_letters;
+                string previous_letters;
+                for(int j = 0; j < i; j++){
+                    previous_letters += date[i];
+                }
+                data_matrix[i][0] = previous_letters;
             }
         }
 
