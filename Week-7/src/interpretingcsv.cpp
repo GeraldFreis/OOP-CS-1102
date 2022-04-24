@@ -32,8 +32,8 @@ void InterpretingCSV::findingschedule(){
             // object.printschedule();
             cout << min<< " " << max << "\n";
         }
-    else if(day == "Saturday" 
-        || "Sunday"){
+    else if(strcmp(day.c_str(), "Saturday") 
+        || strcmp(day.c_str(),"Sunday")){
             Weekends object(min, max);
             object.calcschedule();
             object.printschedule();
