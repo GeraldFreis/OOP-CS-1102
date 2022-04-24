@@ -94,10 +94,10 @@ string **ReadingCSV::getdata(){
 
 void ReadingCSV::printdata(){
     for(int i = 0; i < numberoflines; i++){ // iteraitng over every line and printing the data
-        for(int j = 0; j < 3; j++){
+        for(int j = 0; j < 4; j++){
             cout << data_matrix[i][j] << " "; 
         }
-        cout << data_matrix[i][4] << "\n";
+        cout << data_matrix[i][5] << "\n";
     }
 };
 
