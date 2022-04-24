@@ -34,6 +34,7 @@ void InterpretingCSV::findingschedule(){
         || day == "Sunday"){
             Weekends object(min, max);
             object.calcschedule();
+            cout << day << ": ";
             object.printschedule();
         }
 
