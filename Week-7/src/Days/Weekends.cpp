@@ -49,7 +49,6 @@ void Weekends::calcschedule(){
         // assigning the bounds to the schedule
         schedule[0] = lowerschedbound;
         schedule[1] = upperschedbound; 
-        // cout << schedule[0] << " " << schedule[1];
     }
 
     // medium temp day
