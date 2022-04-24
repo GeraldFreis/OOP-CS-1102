@@ -59,20 +59,19 @@ void ReadingCSV::calcseason(){
         date.c_str();
         string month;
 
-        for(int i = 0; i < date.size(); i++){
-            if(date[i] == '/'){
-                month += ((date[i+1]));
-                month += (date[i+2]);
+        for(int j = 0; j < date.size(); j++){
+            if(date[j] == '/'){
+                month += ((date[j+1]));
+                month += (date[j+2]);
 
                 // rewriting the day of the week as the first element in the row
                 string previous_letters;
-                for(int j = 0; j < i; j++){
-                    previous_letters += (date[j]);
+                for(int k = 0; k < j; k++){
+                    previous_letters += (date[k]);
                 }
                 data_matrix[i][0] = previous_letters;
             }
         }
-
         int monthint = stoi(month);
         
     //     // changing the month to its seasonal counterpart
