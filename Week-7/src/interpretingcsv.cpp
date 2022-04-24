@@ -15,7 +15,6 @@ InterpretingCSV::InterpretingCSV(string *_ptr){ // parameterized constructor
     // explicit conversion from string to int
     int min = std::stoi(ptr[1]);
     int max = std::stoi(ptr[2]);
-    cout << min << " " << max << "\n";
 }   
 
 /*
@@ -30,12 +29,14 @@ void InterpretingCSV::findingschedule(){
             Weekdays object(min, max);
             object.calcschedule();
             object.printschedule();
+            cout << day << "\n";
         }
     else if(day == "Saturday"
         || day == "Sunday"){
             Weekends object(min, max);
             object.calcschedule();
             object.printschedule();
+            cout << day << "\n";
         }
 
     else{
