@@ -26,7 +26,7 @@ class Weekends: public Weekdays{
     public:
         // constructor
         Weekends(); // default constructor
-        Weekends(int min, int max); // parameterized constructor
+        Weekends(const int min, const int max); // parameterized constructor
 
         //member functions
         void calcschedule(); // overriden findingschedule from superclass

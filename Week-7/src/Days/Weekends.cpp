@@ -12,7 +12,7 @@ Weekends::Weekends(){ // default constructor
     maxtemp = 0;
 };
 
-Weekends::Weekends(int min, int max){ // parameterized constructor
+Weekends::Weekends(const int min, const int max){ // parameterized constructor
     schedule_array_1 = new int[2];
     schedule_array_2 = new int[2];
     schedule = new int[2];
@@ -50,7 +50,6 @@ void Weekends::calcschedule(){
         schedule[0] = lowerschedbound;
         schedule[1] = upperschedbound; 
     }
-
     // medium temp day
     else if(15 < mintemp && mintemp < 21 && maxtemp >= 21 && maxtemp <= 26){
         
