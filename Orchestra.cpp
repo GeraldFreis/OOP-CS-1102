@@ -41,7 +41,7 @@ Musician *Orchestra::get_members(){        // returns the array of members of th
 // returns true and adds new musician to the orchestra if the orchestra is not full
 // otherwise returns false
 bool Orchestra::add_musician(Musician new_musician){
-    if(musicianarray[maxsize].get_instrument() == "") // if the last musican object is undefined
+    if(musicianarray[maxsize].get_instrument() == "" && musicianarray[maxsize].get_experience()==0) // if the last musican object is undefined
     {
         // going to the last musician initialised
         for(int i = 0; i < maxsize; i++){
