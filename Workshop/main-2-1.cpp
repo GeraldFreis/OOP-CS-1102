@@ -1,5 +1,5 @@
 #include <iostream>
-#include "orchestra.h"
+#include "Orchestra.h"
 using std::cout; using std::string;
 
 int main(){
@@ -16,6 +16,7 @@ int main(){
     orch.add_musician(muso_2);
     orch.add_musician(muso_3);
     orch.add_musician(muso_4);
+
     cout << orch.get_current_number_of_members() << "\n";
     Musician *orchmembers = orch.get_members();
     cout << orchmembers[1].get_instrument() << "\n";

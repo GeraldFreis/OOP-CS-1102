@@ -1,4 +1,4 @@
-#include "orchestra.h"
+#include "Orchestra.h"
 #include <iostream>
 
 Orchestra::Orchestra(){           // default constructor
