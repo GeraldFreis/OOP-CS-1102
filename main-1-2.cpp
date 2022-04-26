@@ -18,8 +18,7 @@ int main(){
     orch.add_musician(muso_4);
 
     cout << orch.get_current_number_of_members() << "\n";
-    Musician *orchmembers = orch.get_members();
-    cout << orchmembers[1].get_instrument() << "\n";
+    
 
     // overload:
     Musician muso_5("popsicle", 2);
@@ -27,4 +26,7 @@ int main(){
 
     Musician muso_6("Bant", 12);
     orch.add_musician(muso_6);
+    Musician *orchmembers = orch.get_members();
+    cout << orchmembers[1].get_instrument() << "\n";
+    cout << orchmembers[5].get_instrument() << "\n";
 }
