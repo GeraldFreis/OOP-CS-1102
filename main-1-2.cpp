@@ -26,5 +26,5 @@ int main(){
     orch.add_musician(muso_5);
 
     Musician muso_6("Bant", 12);
-    orch.add_musician();
+    orch.add_musician(muso_6);
 }
