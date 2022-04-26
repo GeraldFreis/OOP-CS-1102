@@ -12,5 +12,4 @@ class Musician{
         Musician(std::string instrument, int experience);      
         std::string get_instrument();    // returns the instrument played
         int get_experience();       // returns the number of years experience
-        ~Musician();                //A default destructor
 };

@@ -14,7 +14,3 @@ std::string Musician::get_instrument(){    // returns the instrument played
 int Musician::get_experience(){      // returns the number of years experience
     return yearsofexperience;
 };
-
-Musician::~Musician(){                //A default destructor
-    cout << "destroyed Musician";
-};
