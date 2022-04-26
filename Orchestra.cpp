@@ -51,6 +51,7 @@ bool Orchestra::add_musician(Musician new_musician){
                 return true;
             }
         }
+        return false;
     }
     return false;
 }
