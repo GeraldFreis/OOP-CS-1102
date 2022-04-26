@@ -52,9 +52,7 @@ bool Orchestra::add_musician(Musician new_musician){
             }
         }
     }
-    else{
-        return false;
-    }
+    return false;
 }
 
 Orchestra::~Orchestra(){
