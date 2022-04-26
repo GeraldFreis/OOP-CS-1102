@@ -2,7 +2,7 @@
 #include <iostream>
 
 Orchestra::Orchestra(){           // default constructor
-    musicianarray = new Musician[1];
+    musicianarray = new Musician[0];
     maxsize = 0;
 };
 
