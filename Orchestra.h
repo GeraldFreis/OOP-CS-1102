@@ -1,4 +1,6 @@
 #include <iostream>
+#ifndef ORCHESTRA_H_
+#define ORCHESTRA_H_
 #include "Musician.h"
 using std::cout; using std::string;
 
@@ -6,6 +8,7 @@ class Orchestra{
     protected:
         Musician *musicianarray;
         int maxsize;
+
     public:
         Orchestra();           // default constructor
         Orchestra(int size);   // constructor for an orchestra of given size
@@ -25,3 +28,4 @@ class Orchestra{
 
         ~Orchestra();
 };
+#endif

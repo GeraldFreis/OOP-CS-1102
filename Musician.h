@@ -1,4 +1,6 @@
 #include <iostream>
+#ifndef MUSICIAN_H_
+#define MUSICIAN_H_
 using std::cout; using std::string;
 
 class Musician{
@@ -13,3 +15,4 @@ class Musician{
         std::string get_instrument();    // returns the instrument played
         int get_experience();       // returns the number of years experience
 };
+#endif
