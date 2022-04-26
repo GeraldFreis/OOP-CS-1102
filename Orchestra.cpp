@@ -15,7 +15,7 @@ Orchestra::Orchestra(int size){   // constructor for an orchestra of given size
 int Orchestra::get_current_number_of_members(){
     int counter = 0;
     for(int i = 0; i < maxsize; i++){
-        if(musicianarray[i].get_experience()!=0) // if nothing has been initialised for the musicians
+        if(musicianarray[i].get_experience()!=0 && musicianarray[i].get_instrument()!="") // if nothing has been initialised for the musicians
         {
             counter += 1; 
         }
