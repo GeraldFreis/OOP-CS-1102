@@ -45,7 +45,7 @@ bool Orchestra::add_musician(Musician new_musician){
     {
         // going to the last musician initialised
         for(int i = 0; i < maxsize; i++){
-            if(musicianarray[i].get_instrument()== "") // if this object is unitialised
+            if(musicianarray[i].get_instrument()== "" && musicianarray[i].get_experience() == 0) // if this object is unitialised
             {
                 musicianarray[i] = new_musician;
                 return true;
