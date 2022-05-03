@@ -12,7 +12,7 @@ void Person::move(){                       //allow user to type in a single char
                                     //“Move unavailable” is outputted and the user is
                                     //asked to input a character again.
                                 //Otherwise, their input is stored
-    cout << "Enter a turn value (r,sp): ";
+    cout << "Enter a turn value (r,s,p): ";
     cin >> lastmove;
 
     while(lastmove != 'r' && lastmove != 'R' && lastmove != 's' && lastmove != 'S' && lastmove != 'p' && lastmove != 'P'){

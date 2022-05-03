@@ -7,19 +7,19 @@ int main(){
     Person player1;
     player1.move();
 
-    // cout << "\nComputer plays:" << "\n";
+    cout << "\nComputer plays:" << "\n";
     Player *player2 = new Computer("s");
     
-    // cout << "\n" << player2->getMoves() << "\n";
+    cout << player2->getMoves() << "\n";
 
     if(player1.win(player2)==false){
-        cout << "Player 1 lost";
+        cout << "\nPlayer 1 lost\n";
     }
     else if(player1.win(player2) == true){
-        cout << "Player 2 lost";
+        cout << "\nPlayer 2 lost\n";
     }
     else{
-        cout << "The values were not valid" << "\n";
+        cout << "\nThe values were not valid\n" << "\n";
     }
 
     return 0;

@@ -9,9 +9,8 @@ char Player::getMove(){ //returns the most recent move made
     return lastmove;
 }
 bool Player::win(Player * opponent){ //compares players’ moves to see who wins
-    char opplastmove = opponent->getMove();
-    cout << opplastmove;
-
+    string oppmoves = opponent->getMoves();
+    char opplastmove = oppmoves[oppmoves.size()-1];
     // comparing the players
     if((lastmove == 'r' || lastmove == 'R') && (opplastmove == 's' || opplastmove == 'S')){
         return true;
@@ -24,6 +23,18 @@ bool Player::win(Player * opponent){ //compares players’ moves to see who wins
     }
     else if((lastmove == 'r' || lastmove == 'R') && (opplastmove == 'p' || opplastmove == 'P')){
         return true;
+    }
+    else if((lastmove == 'r' || lastmove == 'R') && (opplastmove == 'r' || opplastmove == 'R')){
+        cout << "You and the computer produced the same result" << "\n";
+        return 3;
+    }
+    else if((lastmove == 's' || lastmove == 'S') && (opplastmove == 's' || opplastmove == 'S')){
+        cout << "You and the computer produced the same result" << "\n";
+        return 3;
+    }
+     else if((lastmove == 'p' || lastmove == 'p') && (opplastmove == 'p' || opplastmove == 'P')){
+        cout << "You and the computer produced the same result" << "\n";
+        return 3;
     }
     else{
         cout << "Not a valid combination" << "\n";
