@@ -8,6 +8,8 @@ int main(){
     Person player1;
     player1.move(); // asking the player for the input
     
-    Computer comp("s");
+    Player *comp = new Computer("S");
     player1.win(comp);
+
+    delete comp;
 }
