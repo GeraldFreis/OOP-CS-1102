@@ -1,5 +1,6 @@
 #include "Player.h"
 #include <iostream>
+using std::cout; using std::string;
 
 Player::Player(){ // default constructor
     lastmove = "";
@@ -16,19 +17,22 @@ char Player::getMove(){
 }
 
 bool Player::win(Player * opponent){ //compares players’ moves to see who wins
-    if((opponent->getMove() == "r" || opponent->getMove() == "R") &&
-    (lastmove == "p" || lastmove == "P")){
-        cout << "Player wins";
-    }
-    else if((opponent->getMove() == "s" || opponent->getMove() == "S") &&
-    (lastmove == "R" || lastmove == "R")){
-        cout << "Player wins";
-    }
-    else if((opponent->getMove() == "p" || opponent->getMove() == "P") &&
-    (lastmove == "s" || lastmove == "s")){
-        cout << "Player wins";
-    }
-    else{
-        cout << "Wrong entry" << "\n";
-    }
+    const char opponentmove = opponent->getMove();
+    cout << opponentmove;
+
+    // if((opponentmove == "r" || opponentmove == "R") &&
+    // (lastmove == "p" || lastmove == "P")){
+    //     cout << "Player wins";
+    // }
+    // else if((opponentmove == "s" || opponentmove) == "S") &&
+    // (lastmove == "R" || lastmove == "R"){
+    //     cout << "Player wins";
+    // }
+    // else if((opponentmove == "p" || opponentmove == "P") &&
+    // (lastmove == "s" || lastmove == "s")){
+    //     cout << "Player wins";
+    // }
+    // else{
+    //     cout << "Wrong entry" << "\n";
+    // }
 }

@@ -5,10 +5,10 @@ using std::cout; using std::string; using std::cin;
 // #define COMPUTER_H
 
 class Computer: public Player{
-    public:
-        string allmoves;
-        
     private:
+        string allmoves;
+
+    public:
         Computer(string letter);                       //set what move the computer will
                                                             //make (rock, paper, or scissors)
                                                             //if the input is not r, R, p, P, s, S or

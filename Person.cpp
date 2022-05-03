@@ -2,8 +2,8 @@
 #include "Person.h"
 
 Person::Person(){
-    this->lastmove = "";
-    this->allmoves = "";
+    lastmove = "";
+    allmoves = "";
 }
 
 void Person::move(){                       //allow user to type in a single character to
@@ -12,16 +12,17 @@ void Person::move(){                       //allow user to type in a single char
                                          //asked to input a character again.
                                         //Otherwise, their input is stored
     cout << "Enter a move (r,p,s): " << "\n";
-    cin >> this->lastmove;
+    cin >> lastmove;
     
-    if(lastmove != "r" || lastmove !="R" || lastmove != "p" || lastmove != "P" || lastmove != "s" || lastmove != "S"){
+    if(lastmove == "r" || lastmove == "R" || lastmove == "p" || lastmove == "P" || lastmove == "s" || lastmove == "S"){
         cout << "Incorrect input" << "\n";
+        allmoves += lastmove;
     }
     else{
-        this->allmoves += this->lastmove;
+        cout << "Incorrect input" << "\n";
     }
 }
 
 string Person::getMoves(){           //returns all moves stored in a string
-    return this->allmoves;
+    return allmoves;
 }
