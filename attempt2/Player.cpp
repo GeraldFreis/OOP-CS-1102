@@ -26,15 +26,12 @@ bool Player::win(Player * opponent){ //compares players’ moves to see who wins
     }
     else if((lastmove == 'r' || lastmove == 'R') && (opplastmove == 'r' || opplastmove == 'R')){
         cout << "You and the computer produced the same result" << "\n";
-        return 3;
     }
     else if((lastmove == 's' || lastmove == 'S') && (opplastmove == 's' || opplastmove == 'S')){
         cout << "You and the computer produced the same result" << "\n";
-        return 3;
     }
      else if((lastmove == 'p' || lastmove == 'p') && (opplastmove == 'p' || opplastmove == 'P')){
         cout << "You and the computer produced the same result" << "\n";
-        return 3;
     }
     else{
         cout << "Not a valid combination" << "\n";
