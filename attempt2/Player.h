@@ -1,0 +1,19 @@
+#include <iostream>
+#ifndef PLAYER_H
+#define PLAYER_H
+using std::string; using std::cout; using std::cin;
+
+class Player {
+    private:
+        char lastmove;
+        std::string allmoves;
+
+    public:
+        Player();
+        virtual void move() = 0;
+        virtual std::string getMoves() = 0;
+        char getMove(); //returns the most recent move made
+        bool win(Player * opponent); //compares players’ moves to see who wins
+};
+
+#endif
