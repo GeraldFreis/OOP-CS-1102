@@ -22,7 +22,7 @@ bool Player::win(Player * opponent){ //compares players’ moves to see who wins
         return false;
     }
     else if((lastmove == 'r' || lastmove == 'R') && (opplastmove == 'p' || opplastmove == 'P')){
-        return true;
+        return false;
     }
     else if((lastmove == 'r' || lastmove == 'R') && (opplastmove == 'r' || opplastmove == 'R')){
         cout << "You and the computer produced the same result" << "\n";
