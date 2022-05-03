@@ -1,7 +1,8 @@
 #include <iostream>
+using std::string; using std::cout; using std::cin;
+
 #ifndef PLAYER_H
 #define PLAYER_H
-using std::string; using std::cout; using std::cin;
 
 class Player {
     private:

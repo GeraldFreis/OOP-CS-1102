@@ -26,5 +26,6 @@ bool Player::win(Player * opponent){ //compares players’ moves to see who wins
     }
     else{
         cout << "Not a valid combination" << "\n";
+        return false;
     }
 }
