@@ -9,5 +9,5 @@ char Player::getMove(){ //returns the most recent move made
     return lastmove;
 }
 bool Player::win(Player * opponent){ //compares players’ moves to see who wins
-
+    char opplastmove = opponent->getMove();
 }
