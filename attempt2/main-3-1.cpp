@@ -7,9 +7,10 @@ int main(){
     Person player1;
     player1.move();
 
-    cout << "\nNew player" << "\n";
+    // cout << "\nComputer plays:" << "\n";
     Player *player2 = new Computer("s");
-    player2->move();
+    
+    // cout << "\n" << player2->getMoves() << "\n";
 
     if(player1.win(player2)==false){
         cout << "Player 1 lost";

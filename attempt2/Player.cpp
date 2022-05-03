@@ -10,6 +10,7 @@ char Player::getMove(){ //returns the most recent move made
 }
 bool Player::win(Player * opponent){ //compares players’ moves to see who wins
     char opplastmove = opponent->getMove();
+    cout << opplastmove;
 
     // comparing the players
     if((lastmove == 'r' || lastmove == 'R') && (opplastmove == 's' || opplastmove == 'S')){
