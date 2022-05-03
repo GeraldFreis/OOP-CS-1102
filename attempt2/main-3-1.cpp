@@ -21,6 +21,5 @@ int main(){
     else{
         cout << "\nThe values were not valid\n" << "\n";
     }
-
     return 0;
 }
