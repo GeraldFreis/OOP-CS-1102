@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Person.h"
+#include "Computer.h"
 using std::cout; using std::string; using std::cin;
 
 int main(){
@@ -7,7 +8,7 @@ int main(){
     player1.move();
 
     cout << "\nNew player" << "\n";
-    Player *player2 = new Person;
+    Player *player2 = new Computer("s");
     player2->move();
 
     if(player1.win(player2)==false){
@@ -19,6 +20,6 @@ int main(){
     else{
         cout << "The values were not valid" << "\n";
     }
-    
+
     return 0;
 }
