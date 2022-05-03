@@ -5,5 +5,6 @@
 using std::cout; using std::string;
 
 int main(){
+    Person player1;
     
 }
