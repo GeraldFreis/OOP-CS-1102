@@ -18,3 +18,14 @@ class Player {
 };
 
 #endif
+
+class Card1{
+    public:
+    string name;
+};
+
+struct Cards{
+    Card1 card;
+    int type;
+    int string;
+};
