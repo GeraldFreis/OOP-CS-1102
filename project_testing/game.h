@@ -25,10 +25,10 @@ using std::string; using std::cout;
 
             buttons (hit, stand, double, start) {all created on screen by userwindow object}
 */
-class Game {
+class Game: public Blackjack {
     private:
         int balance;
-        int betamount;
+        int bet_amount;
         bool game_has_begun;
         int hit_counter;
 
@@ -69,6 +69,7 @@ class Game {
 
         // methods
         void mainscreen();
+        int get_bet_amount();
 
         ~Game();
 

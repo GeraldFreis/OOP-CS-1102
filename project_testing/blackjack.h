@@ -22,7 +22,7 @@ class Blackjack: public Bet {
         std::vector<WINDOW *> start_game(); // returns a pointer to an array of windows
         std::vector<WINDOW *> hit();
         std::vector<WINDOW *> stand();
-        // int get_bet_amount(); // from Bet
+        int get_bet_amount(); // from Bet
 };
 
 #endif

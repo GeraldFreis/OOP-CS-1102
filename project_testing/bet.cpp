@@ -4,13 +4,6 @@ Bet::Bet(int _balance){
     balance = _balance;
     raw_bet_amount = "";
     bet_amount = 0;
-
-    // betamount_field[0] = new_field(1,1,30,130,0,0);
-    // set_field_back(betamount_field[0], O_AUTOSKIP);
-
-    // betamount_field[1] = NULL;
-
-    // betting_form = new_form(betamount_field);
 };
 
 
@@ -19,20 +12,13 @@ Bet::Bet(){
     raw_bet_amount = "";
     bet_amount = 0;
 
-    // betamount_field[0] = new_field(1,1,30,130,0,0);
-    // set_field_back(betamount_field[0], O_AUTOSKIP);
-
-    // betamount_field[1] = NULL;
-
-    // betting_form = new_form(betamount_field);
-
 };
 
 bool Bet::isvalid_bet_amount(char betting_input){
     switch(betting_input){
             case '0':
                 raw_bet_amount += '0';
-                printw("%c", betting_input);
+                printw("%c worked", betting_input);
                 return true;
             
 
@@ -96,8 +82,7 @@ string Bet::bet_interface(){
 	noecho();
 	cbreak();	/* Line buffering disabled. pass on everything */
 
-    WINDOW *betting_window;
-    betting_window = window_creation.bet_window(10);
+    WINDOW *betting_window = window_creation.bet_window(10);
 
     int betting_input;
 
@@ -105,8 +90,6 @@ string Bet::bet_interface(){
 
     betamount_field[0] = new_field(1,1,30,130,0,0);
     set_field_back(betamount_field[0], O_AUTOSKIP);
-
-    
 
     betamount_field[1] = NULL;
 
@@ -120,16 +103,13 @@ string Bet::bet_interface(){
 
     bool betting_test = true;
     
-    mvaddch(30, 100, ' ');
+    mvaddch(30, 100, ' '); // moves where the user enters the number
 
-    
-
-    while(betting_test == true){
+    while(betting_test == true){ // checking the user input
         betting_input = getch();
         if(isvalid_bet_amount(betting_input) != true){ // if the input was a 'q'
-            betting_test = false;
-        }
-        
+           betting_test = false;
+        } 
     }
     
     unpost_form(betting_form);
@@ -137,16 +117,17 @@ string Bet::bet_interface(){
 
     free_field(betamount_field[0]);
     // free_field(betamount_field[1]);
-    window_creation.end_win(betting_window);
     endwin();
+
     return raw_bet_amount;
 };
 
 void Bet::set_bet_amount(){
     while(bet_amount == 0){
         raw_bet_amount = bet_interface();
-        if (raw_bet_amount != "") {bet_amount = std::stoi(raw_bet_amount);}
-        else{bet_amount = 0;}
+
+        if (raw_bet_amount != "") {bet_amount = std::stoi(raw_bet_amount); return;}
+        else{bet_amount = 0; printw("Please enter a number");}
 
         if(bet_amount > balance){ // if the bet amount is greater than the user's balance
             bet_amount = 0;

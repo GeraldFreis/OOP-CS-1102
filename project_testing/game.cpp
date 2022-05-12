@@ -3,7 +3,7 @@
 
 Game::Game(){
     balance = 0;
-    betamount = 0;
+    bet_amount = 0;
     game_has_begun = false;
     hit_counter = 0;
 
@@ -28,7 +28,7 @@ Game::Game(){
 
 Game::Game(int _balance){
     balance = _balance;
-    betamount = 0;
+    bet_amount = 0;
     game_has_begun = false;
     hit_counter = 0;
 
@@ -95,7 +95,7 @@ void Game::mainscreen(){
             string balance_string = std::to_string(balance);
             char const *balance_char = balance_string.c_str();
 
-            string betamount_string = std::to_string(betamount);
+            string betamount_string = std::to_string(bet_amount);
             char const *betamount_char = betamount_string.c_str();
 
             mvaddstr(27,170, "Player balance: ");
@@ -127,7 +127,7 @@ void Game::mainscreen(){
 
                 case 's': // if the user wants to start the game
                     dealt_cards = blackjack.start_game();
-                    betamount = blackjack.get_bet_amount();
+                    bet_amount = blackjack.get_bet_amount();
 
                     // setting the dealer cards and player cards to those dealt
                     dealer_card_1 = dealt_cards[0];
@@ -135,8 +135,18 @@ void Game::mainscreen(){
 
                     player_card_1 = dealt_cards[2];
                     player_card_2 = dealt_cards[3];
+
+                    game_has_begun = true;
+                    refresh();
                     break;
                 
+                case '2': // if the user wants to hit
+                    if(game_has_begun){ // if the user has pressed start game already
+                        dealt_cards = blackjack.hit();
+                        player_card_3 = dealt_cards[8];
+                    }
+                    break;
+
                 default:
                     break;
             }
@@ -148,14 +158,17 @@ void Game::mainscreen(){
     window_tools.end_win(dealer_card_2);
     window_tools.end_win(player_card_1);
     window_tools.end_win(player_card_2);
-    window_tools.end_win(dealer_card_3);
-    window_tools.end_win(player_card_3);
 
     endwin();
     return;
+}
+
+int Game::get_bet_amount(){
+    return bet_amount;
 }
 
 
 Game::~Game(){
     cout << "Thanks for playing" << "\n";
 };
+

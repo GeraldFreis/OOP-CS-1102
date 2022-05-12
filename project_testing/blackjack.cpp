@@ -94,3 +94,7 @@ std::vector<WINDOW *> Blackjack::hit(){
 std::vector<WINDOW *> Blackjack::stand(){
     return array;
 };
+
+int Blackjack::get_bet_amount(){
+    return bet_amount;
+}
