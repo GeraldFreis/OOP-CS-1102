@@ -19,8 +19,8 @@ class Bet {
         Window window_creation;
         WINDOW *betting_window;
         string bet_interface(); // creates a window to interface w the user and retrieve the raw bet amount
-
-
+        bool isvalid_bet_amount(char betting_input);
+        
     public:
         Bet();
         Bet(int _balance);
@@ -29,4 +29,4 @@ class Bet {
 
 };
 
-#endif BET_H
+#endif

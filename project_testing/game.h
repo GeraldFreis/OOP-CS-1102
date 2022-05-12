@@ -2,6 +2,8 @@
 #include <ncurses.h>
 #include <form.h>
 #include "window.h"
+#include "bet.h"
+using std::string; using std::cout;
 
 #ifndef GAME_H
 #define GAME_H
@@ -19,9 +21,6 @@
             userwindow (Window object that enables creation of the cards onto the window)
 
             buttons (hit, stand, double, start) {all created on screen by userwindow object}
-
-            betting_window (window in which the bet amount will be requested when player begins the game)
-            betamount_field (field to contain the bet amount in the bet window)
 */
 class Game {
     private:
@@ -43,8 +42,8 @@ class Game {
         WINDOW *card_7; // player card 3
         WINDOW *card_8; // player card 4;
 
-        // initialising the window object to create the cards
-        Window userwindow;
+        // initialising the window object to create the cards, destroy the cards, and create the buttons
+        Window window_tools;
 
         // initialising the buttons for the game options
         WINDOW *hit_button;
@@ -57,6 +56,15 @@ class Game {
 
 
     public:
+        // constructors
+        Game();
+        Game(int);
+
+        // methods
+        void mainscreen();
+
+        ~Game();
+
 
 };
 #endif GAME_H
