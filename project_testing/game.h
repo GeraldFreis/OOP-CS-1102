@@ -6,6 +6,23 @@
 #ifndef GAME_H
 #define GAME_H
 
+/*
+    class Game:
+        attrs: all non public:
+            -> balance
+            -> betamount
+            -> game has begun
+            -> hit counter
+
+            cards (1-8) {4 cards for both the user and dealer}
+
+            userwindow (Window object that enables creation of the cards onto the window)
+
+            buttons (hit, stand, double, start) {all created on screen by userwindow object}
+
+            betting_window (window in which the bet amount will be requested when player begins the game)
+            betamount_field (field to contain the bet amount in the bet window)
+*/
 class Game {
     private:
         int balance;
@@ -37,8 +54,9 @@ class Game {
         
         // initialising the betting window:
         WINDOW *betting_window;
-        FIELD *betamount_field[2]; // initialising the field to hold the bet amount
-        FORM *betting_form; // initialising the form to hold the bet amount
+
+
+    public:
 
 };
 #endif GAME_H
