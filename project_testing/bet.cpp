@@ -88,7 +88,7 @@ bool Bet::isvalid_bet_amount(char betting_input){
             default:
                 return true;
         }     
-}
+};
 
 string Bet::bet_interface(){
     initscr();
@@ -144,8 +144,6 @@ string Bet::bet_interface(){
 
 void Bet::set_bet_amount(){
     while(bet_amount == 0){
-        
-        
         raw_bet_amount = bet_interface();
         bet_amount = std::stoi(raw_bet_amount);
 
