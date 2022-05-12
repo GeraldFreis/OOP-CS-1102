@@ -6,10 +6,9 @@ int main(){
     
 
     // test 1
-    cout << "Test 1 Should print nothing" << "\n";
     Invoice invoicetestobj_1("1321");
 
-    if(invoicetestobj_1.getInvoiceCode() != "1321"){
+    if(invoicetestobj_1.getInvoiceCode() == "1321"){
         cout << "Test 1 (INVOICE CODE) passed" << "\n";
     }
     else{
@@ -51,9 +50,12 @@ int main(){
     }
 
     // applying a discount
-    
+    invoicetestobj_1.applyDiscount(0.2);
+    if(invoicetestobj_1.getDollarsOwed() != (-800)){
+        cout << "Test 6 (APPLYING DISCOUNT) failed "<< "\n";
+    }
+    else {
+        cout << "Test 6 applying discount passed" << "\n";
+    }
 
-    // checking if the invoice code is valid
-    
-    // test 2
 }
