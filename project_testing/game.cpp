@@ -71,7 +71,7 @@ void Game::mainscreen(){
             int key_input = getch();
 
             // initialising the blackjack start function into a vector
-            std::vector<WINDOW *> screen_object_arr = blackjack.start_game();
+            std::vector<WINDOW *> screen_object_arr = blackjack.game_template();
 
             // setting each object on the screen to the created screen object
             dealer_card_1 = screen_object_arr[0];
@@ -142,13 +142,14 @@ void Game::mainscreen(){
             }
         }
     }
+
     // closing the windows
-    userwindow.end_win(card_1);
-    userwindow.end_win(card_2);
-    userwindow.end_win(card_3);
-    userwindow.end_win(card_4);
-    userwindow.end_win(card_7);
-    userwindow.end_win(card_8);
+    window_tools.end_win(dealer_card_1);
+    window_tools.end_win(dealer_card_2);
+    window_tools.end_win(player_card_1);
+    window_tools.end_win(player_card_2);
+    window_tools.end_win(dealer_card_3);
+    window_tools.end_win(player_card_3);
 
     endwin();
     return;
