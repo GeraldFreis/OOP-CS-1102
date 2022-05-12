@@ -18,7 +18,7 @@ bool Bet::isvalid_bet_amount(char betting_input){
     switch(betting_input){
             case '0':
                 raw_bet_amount += '0';
-                printw("%c worked", betting_input);
+                printw("%c", betting_input);
                 return true;
             
 
@@ -99,7 +99,12 @@ string Bet::bet_interface(){
 
     
     mvaddch(26, 100, ' ');
-    printw("Please enter a bet amount: (press q when finished typing)");
+    printw("Please enter a bet amount that is less than your balance: (press q when finished typing)"); 
+    mvaddstr(26, 190, "Balance: ");
+
+    string balance_string = std::to_string(balance); // converting the int to a const char
+    char const *balance_char = balance_string.c_str();
+    mvaddstr(26, 200, balance_char);
 
     bool betting_test = true;
     
