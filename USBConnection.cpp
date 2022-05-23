@@ -13,8 +13,14 @@ USBConnection *USBConnection::CreateUsbConnection(){
 }
 
 
+// std::stack<int> ids(int array[]){
+//     std::stack<int> returnarr;
+//     returnarr.push(array[0]);
+//     returnarr.push(array[1]);
+//     returnarr.push(array[2]);
 
-
+//     return returnarr;
+// }
 int USBConnection::get_id(){
     return ID;
 }
