@@ -9,7 +9,7 @@ void sort_by_animalID::sort(animal **animals, int n){	// sorts the array of n an
             swapped = false;
             for (j = 0; j < n-i-1; j++)
                 {
-                    if (animals[j]->get_animalID() > animals[j]->get_animalID())
+                    if (animals[j]->get_animalID() > animals[j+1]->get_animalID())
                     {
                         animal *tempan = animals[j+1];
                         animals[j+1] = animals[j];
