@@ -1,5 +1,4 @@
 #include "sort_by_name.h"
-#include <bits/stdc++.h>
 
 
 void sort_by_name::sort(animal **animals, int n){	// sorts the array of n animals into ascending order using their animalIDs
@@ -12,7 +11,7 @@ void sort_by_name::sort(animal **animals, int n){	// sorts the array of n animal
                 {
                     if (animals[j]->get_name() > animals[j]->get_name())
                     {
-                        swap(animals[j], animals[j+1]);
+                        std::swap(animals[j], animals[j+1]);
                         swapped = true;
                     }
                 }
