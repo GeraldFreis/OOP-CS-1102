@@ -20,6 +20,7 @@
         "vector": "cpp",
         "__functional_03": "cpp",
         "functional": "cpp",
-        "memory": "cpp"
+        "memory": "cpp",
+        "iostream": "cpp"
     }
 }
