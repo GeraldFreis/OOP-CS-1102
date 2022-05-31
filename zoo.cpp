@@ -4,11 +4,11 @@ zoo::zoo(string n,int cows,int lions){      // create a zoo with the given numbe
     animals = new animal*[cows+lions];
     
     for(int i = 0; i < cows; i++){
-        animals[i] = new vegie("daisy", 100);
+        animals[i] = new vegie("Daisy", 100);
     }
 
     for(int i = cows; i < (cows+lions); i++){
-        animals[i] = new hunter("clarence", 50);
+        animals[i] = new hunter("Clarence", 50);
     }
 
     name = n;
