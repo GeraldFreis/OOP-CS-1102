@@ -6,7 +6,7 @@ hunter::hunter(string n, int v): animal(n, v){  // create a hunter with name n a
     name = n;
     volume = v;
     kills = 0;
-    this->animalID = nextID;
+    this->animal::animalID = nextID;
     nextID += 1;
 }
 
