@@ -9,7 +9,7 @@ void sort_by_name::sort(animal **animals, int n){	// sorts the array of n animal
             swapped = false;
             for (j = 0; j < n-i-1; j++)
                 {
-                    if (animals[j]->get_name() > animals[j]->get_name())
+                    if (animals[j]->get_name() > animals[j+1]->get_name())
                     {
                         std::swap(animals[j], animals[j+1]);
                         swapped = true;
