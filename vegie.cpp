@@ -1,9 +1,13 @@
 #include "vegie.h"
 
+int vegie::nextID = 100;
+
 vegie::vegie(string n,int v): animal(n, v){      // create a vegie with name n and body volume v
     this->name = n;
     this->volume = v;
     favourite_food = "grass";
+    this->animalID = nextID;
+    nextID += 1;
 }
 
 string vegie::get_name(){

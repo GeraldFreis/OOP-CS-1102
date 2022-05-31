@@ -1,9 +1,11 @@
 #include "hunter.h"
 
+int hunter::nextID = 1000;
 hunter::hunter(string n, int v): animal(n, v){  // create a hunter with name n and body volume v
     this->name = n;
     this->volume = v;
     kills = 0;
+    id = nextID;
     nextID += 1;
 }
 
