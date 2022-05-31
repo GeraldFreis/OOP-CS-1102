@@ -1,10 +1,11 @@
 #include "animal.h"
 
+
 animal::animal(string n, int v){  // creates an animal with name n and body volume v.
                            // animals are allocated a unique ID on creation
     name = n;
     volume = v;
-    animalID = id;
+    animalID = 0;
 }
 
 void animal::set_name(string n){
