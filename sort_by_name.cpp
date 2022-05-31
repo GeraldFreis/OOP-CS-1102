@@ -8,7 +8,7 @@ void sort_by_name::sort(animal **animals, int n){	// sorts the array of n animal
             swapped = false;
             for (j = 0; j < n-i-1; j++)
                 {
-                    if (animals[j]->get_name()[0] > animals[j]->get_name()[0])
+                    if (animals[j]->get_name() > animals[j]->get_name())
                     {
                         animal *tempan = animals[j+1];
                         animals[j+1] = animals[j];
