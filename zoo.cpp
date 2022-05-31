@@ -2,6 +2,7 @@
 
 zoo::zoo(string n,int cows,int lions){      // create a zoo with the given number of cows and lions
     animal **animal_s = new animal*[cows+lions];
+    
     for(int i = 0; i < cows; i++){
         animals[i] = new vegie("daisy", 100);
     }
