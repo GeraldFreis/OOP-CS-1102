@@ -3,7 +3,8 @@
 BookStore::BookStore(string n, string a, int b){   // creates a BookStore name n, address a, and number of books in the store b
     name = n;
     address = a;
-    numBook = b;
+    if(b > 0){numBook = b;}
+    else {numBook = 0;}
 }
 BookStore::BookStore(){
     name = "";
