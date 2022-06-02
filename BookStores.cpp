@@ -5,7 +5,7 @@ void BookStores::sort(Dymocks **store, int n){      // sorts the array of n Dymo
     // sorting the array
     bool test = false;
     while(test == false){
-        int randnum = rand() % (n-1);
+        int randnum = 1 + rand() % (n);
 
         if(store[randnum]->get_storeID() > store[randnum-1]->get_storeID()){
             swap(store[randnum], store[randnum-1]);
