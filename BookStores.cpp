@@ -7,7 +7,7 @@ void BookStores::sort(Dymocks **store, int n){      // sorts the array of n Dymo
     while(test == false){
         int randnum = 1 + rand() % (n-1);
 
-        if(store[randnum]->get_storeID() > store[randnum-1]->get_storeID()){
+        if(store[randnum]->get_storeID() < store[randnum-1]->get_storeID()){
             swap(store[randnum], store[randnum-1]);
         }
 
@@ -17,9 +17,11 @@ void BookStores::sort(Dymocks **store, int n){      // sorts the array of n Dymo
             if (last_val->get_storeID() < store[i]->get_storeID() && i != n - 1){
                 last_val = store[i];
             }
+
             else if(last_val->get_storeID() < store[i]->get_storeID() && i == n - 1){
                 test = true;
             }
+
             else {
                 break;
             }
