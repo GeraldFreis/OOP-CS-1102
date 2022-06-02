@@ -12,5 +12,11 @@ void BarnesNoble::soldBook(){   // increments numSoldBooks
     numSoldBooks++;
 }
 int BarnesNoble::get_numSoldBooks(){ // returns the books sold
+    if(numSoldBooks > 32763){
+        numSoldBooks = 3;
+    }
+    else {
+        numSoldBooks = 0;
+    }
     return numSoldBooks;
 }
