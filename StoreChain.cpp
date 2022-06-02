@@ -10,10 +10,14 @@ StoreChain::StoreChain(){
     stores[2] = new Dymocks(false);
     stores[3] = new Dymocks(true);
     stores[4] = new BarnesNoble("Centerville");
-
 }
 
 BookStore **StoreChain::get_bookStores(){      // returns the array of pointers to the five BookStore objects
+    stores[0]->set_numBook(1000);
+    stores[1]->set_numBook(1000);
+    stores[2]->set_numBook(1000);
+    stores[3]->set_numBook(1000);
+    stores[4]->set_numBook(1000);
     return stores;
 }
 
